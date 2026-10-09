@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>London Weekend Map</title>
+<meta name="description" content="Kid-friendly London events for the weekend, mapped from the Dads in London newsletter.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700&display=swap">
+<style>
+/* Layout: a live Leaflet map fills the screen. A title card floats top-left, the venue list floats right (bottom sheet on phones). Weekend pins are cobalt and solid, ongoing pins are grey rings. */
+:root {
+  --bg: #F2F4F3;
+  --surface: #FFFFFF;
+  --glass: rgba(255, 255, 255, .95);
+  --ink: #17201D;
+  --ink-soft: #56635E;
+  --line: #DCE1DE;
+  --accent: #2747D6;
+  --accent-ink: #FFFFFF;
+  --ongoing: #6E7B76;
+  --font-body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .95); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
+    --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .95); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
+  --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.45 var(--font-body); margin: 0; overflow: hidden; }
+.app { position: relative; height: 100%; overflow: hidden; background: var(--bg); }
+button { font-family: inherit; }
+button:focus-visible, .mk:focus-visible, .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+#map { position: absolute; inset: 0; z-index: 0; background: #e8ecef; font-family: var(--font-body); }
+.leaflet-control-attribution { font-size: 11px; }
+.mkicon { background: none; border: 0; }
+.mk { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); padding: 0; margin: 0; border: 0; background: none; cursor: pointer; }
+.mk .dot { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,.45); font: 500 12px/1 var(--font-mono); }
+.mk.ongoing .dot { width: 18px; height: 18px; background: #fff; color: #5b6761; border: 2px solid #5b6761; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.mk.later .dot { width: 18px; height: 18px; background: #fff; color: #5b6761; border: 2px dashed #5b6761; box-shadow: none; }
+.mk.approx .dot { outline: 2px dotted #4a5550; outline-offset: 2px; }
+.mk .tag { position: absolute; left: 50%; bottom: calc(100% + 7px); transform: translateX(-50%); white-space: nowrap; padding: 3px 8px; border-radius: 4px; background: #17201D; color: #fff; font: 500 12px var(--font-body); pointer-events: none; opacity: 0; }
+.mk:hover .tag, .mk:focus-visible .tag, .mk.sel .tag { opacity: 1; }
+.mk.sel .dot { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 35%, transparent), 0 1px 5px rgba(0,0,0,.4); }
+
+.hud { position: absolute; z-index: 10; left: 12px; top: 12px; max-width: min(460px, calc(100% - 24px)); padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--glass); }
+.kicker { margin: 0 0 2px; font: 500 11px/1.3 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+h1 { margin: 0 0 10px; font-size: clamp(20px, 3vw, 28px); line-height: 1.1; font-weight: 700; letter-spacing: -.02em; text-wrap: balance; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; font: 500 13px var(--font-body); cursor: pointer; }
+.chip[aria-pressed="false"] { color: var(--ink-soft); background: transparent; }
+.chip[aria-pressed="false"] .key { opacity: .35; }
+.key { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
+.key.ongoing { background: transparent; border: 2px solid var(--ongoing); }
+.key.later { background: transparent; border: 2px dashed var(--ongoing); }
+.chip b { font: 500 12px var(--font-mono); color: var(--ink-soft); }
+
+.ctl { position: absolute; z-index: 10; left: 12px; bottom: 34px; display: flex; flex-direction: column; gap: 4px; }
+.ctl button { min-width: 38px; height: 38px; padding: 0 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--glass); color: var(--ink); font: 500 17px var(--font-body); cursor: pointer; }
+.ctl button.sm { font-size: 12px; }
+.empty { position: absolute; inset: 0; z-index: 5; display: none; place-items: center; color: var(--ink-soft); pointer-events: none; }
+
+.panel { position: absolute; z-index: 10; right: 12px; top: 12px; bottom: 12px; width: 380px; display: flex; flex-direction: column; gap: 8px; min-height: 0; pointer-events: none; }
+.panel > * { pointer-events: auto; }
+.ptoggle { align-self: flex-end; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--glass); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; }
+.ptoggle .chev { width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .2s; }
+.panel[data-open="true"] .ptoggle .chev { transform: rotate(135deg); }
+.panel[data-open="false"] { bottom: auto; width: auto; }
+.panel[data-open="false"] .list, .panel[data-open="false"] .note { display: none; }
+.list { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding: 2px; }
+.card { flex: none; border: 1px solid var(--line); border-radius: 8px; background: var(--glass); padding: 12px 14px; cursor: pointer; }
+.card.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card h2 { margin: 0; font-size: 16px; line-height: 1.25; font-weight: 700; }
+.addr { margin: 2px 0 0; font: 400 12px/1.4 var(--font-mono); color: var(--ink-soft); }
+.ev { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--line); }
+.ev .t { margin: 0; font-weight: 500; }
+.ev .t a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.ev .cat { font: 500 11px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--accent); }
+.ev .cat.ongoing, .ev .cat.later { color: var(--ink-soft); }
+.ev p { margin: 2px 0 0; color: var(--ink-soft); font-size: 13.5px; }
+.ev .when { font: 400 12.5px/1.4 var(--font-mono); color: var(--ink); }
+.note { margin: 0; padding: 6px 12px; border-radius: 6px; background: var(--glass); color: var(--ink-soft); font-size: 12px; }
+.note a { color: inherit; }
+
+@media (max-width: 820px) {
+  .hud { right: 12px; max-width: none; }
+  .panel { left: 8px; right: 8px; top: auto; bottom: 8px; width: auto; max-height: 46%; }
+  .panel[data-open="false"] { left: auto; }
+  .ctl { left: auto; right: 12px; bottom: 80px; }
+  .app[data-open="true"] .ctl { bottom: calc(46% + 20px); }
+}
+@media (prefers-reduced-motion: reduce) { .ptoggle .chev { transition: none; } }
+</style>
+</head>
+<body>
+<div class="app" id="app" data-open="true">
+  <div id="map"></div>
+  <div class="hud" id="hud">
+    <p class="kicker">From Dads in London · <span id="issued"></span></p>
+    <h1>London with the kids, 3–4 October</h1>
+    <div class="filters" id="filters" role="group" aria-label="Show on map"></div>
+  </div>
+  <div class="ctl"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="reset" class="sm" aria-label="Reset view">Fit</button><button id="full" class="sm" aria-label="Full screen">Full</button></div>
+  <aside class="panel" id="panel" data-open="true" aria-label="Venues">
+    <button class="ptoggle" id="ptoggle" type="button" aria-expanded="true"><span id="plabel"></span><span class="chev"></span></button>
+    <div class="list" id="list"></div>
+    <p class="note">Dotted ring: pinned at the postcode district centre. <a id="src" href="#" rel="noopener">Read the newsletter</a></p>
+  </aside>
+  <div class="empty" id="empty">Nothing selected to show.</div>
+</div>
+
+<script type="application/json" id="data">{"source": {"subject": "34 things to do in London this weekend with the kids (3–4 October)", "issued": "2026-09-30", "weekend_label": "3–4 October", "url": "https://www.dadsinlondon.com/p/34-things-to-do-in-london-this-weekend-with-the-kids-3-4-october"}, "venues": [{"name": "Fulham Palace", "address": "Bishop's Avenue", "postcode": "SW6 6EA", "lat": 51.470771, "lng": -0.21588, "approx": false, "events": [{"title": "Apple Day", "url": "https://www.fulhampalace.org/whats-on/events/apple-day/", "when": "Sunday 4 October, 11:00–16:00", "price": "Adults £3, adult + child £4, family £8", "age": "Suitable for all", "category": "weekend", "featured": true, "blurb": "Orchard tours, zorbing, archery tag and an apple baking competition."}]}, {"name": "Olympia", "address": "Hammersmith Road", "postcode": "W14 8UX", "lat": 51.49469102028083, "lng": -0.21024244929797165, "approx": true, "events": [{"title": "AnimeCon London", "url": "https://animeconlondon.com/", "when": "Saturday 10:00–18:00, Sunday 10:00–17:00", "price": "Adults £30 Sat / £25 Sun, 5–12s £7 / £5, under-5s free", "age": "Suitable for all", "category": "weekend", "featured": true, "blurb": "Cosplay, manga drawing workshops, KPop Demon Hunters dance and a play park."}]}, {"name": "Southbank Centre", "address": "Belvedere Road", "postcode": "SE1 8XX", "lat": 51.505768, "lng": -0.1168, "approx": false, "events": [{"title": "Acrobalance with Mimbre + Ballroom Boogie", "url": "https://www.southbankcentre.co.uk/whats-on/saturday-sessions-acrobalance-with-mimbre/", "when": "Acrobalance 13:15, Ballroom Boogie 14:30 (relaxed acrobalance 11:00)", "price": "FREE, no booking", "age": "Acrobalance 5–11, Ballroom Boogie all", "category": "weekend", "featured": true, "blurb": "Human pyramids, then a family dance floor."}]}, {"name": "Design Museum", "address": "224–238 Kensington High Street", "postcode": "W8 6AG", "lat": 51.499874, "lng": -0.200163, "approx": false, "events": [{"title": "Es Devlin: Other Worlds", "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds", "when": "Until 4 April, 10:00–18:00 (17:00 Mon–Thu)", "price": "Adults £21, 6–15s £11, under-6s free", "age": "", "category": "ongoing", "featured": true, "blurb": "30 years of stage design for Beyoncé, the Olympics and the Super Bowl."}]}, {"name": "The Royal Institution", "address": "21 Albemarle Street", "postcode": "W1S 4BS", "lat": 51.509947, "lng": -0.142554, "approx": false, "events": [{"title": "Prism Break", "url": "https://www.rigb.org/whats-on/prism-break-family", "when": "Saturday 3 October, 15:00", "price": "Adults £17.06, under-17s £10.85", "age": "7–13", "category": "weekend", "featured": true, "blurb": "The science of light, with flames, bubbles and chocolate."}]}, {"name": "The Well Walk Theatre", "address": "49 Willow Road", "postcode": "NW3 1TS", "lat": 51.557575, "lng": -0.174269, "approx": false, "events": [{"title": "Stories on Stage: The Magic Story Trunk Halloween Special", "url": "https://shop.beyonk.com/2wopiy2m/experiences/ex_bmqktwz5zggh5of7", "when": "Saturday 3 October, 11:30 and 16:00", "price": "£3.18 per person", "age": "Suitable for all", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "Somerset House", "address": "Strand", "postcode": "WC2R 1LA", "lat": 51.510926, "lng": -0.117683, "approx": false, "events": [{"title": "Jenkin van Zyl: Enclosure", "url": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure", "when": "Tuesday–Sunday until 29 November", "price": "FREE, booking required", "age": "13+", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Eclipso Immersive Entertainment", "address": "213–219 Camden High Street", "postcode": "NW1 7BT", "lat": 51.5393, "lng": -0.143218, "approx": false, "events": [{"title": "Everest: The First Ascent", "url": "https://fever.pxf.io/dyJAQQ", "when": "Wednesday–Sunday until 31 December, 10:00 or 11:00–19:00", "price": "Adults £27.50, 8–17s £21.50", "age": "8+", "category": "ongoing", "featured": false, "blurb": "Immersive experience."}]}, {"name": "Shakespeare's Globe", "address": "21 New Globe Walk", "postcode": "SE1 9DT", "lat": 51.508112, "lng": -0.096572, "approx": false, "events": [{"title": "Ghosts & Ghouls Family Tour", "url": "https://www.shakespearesglobe.com/whats-on/ghosts-and-ghouls-family-tour/", "when": "Various dates until 30 January", "price": "Adults £23, under-16s £18", "age": "", "category": "ongoing", "featured": false, "blurb": ""}, {"title": "As You Like It", "url": "https://www.shakespearesglobe.com/whats-on/as-you-like-it/", "when": "Until 25 October", "price": "Standing £10, seated £28–£88", "age": "Suitable for all", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "London Zoo", "address": "Outer Circle, Regent's Park", "postcode": "NW1 4RY", "lat": 51.53572, "lng": -0.155707, "approx": false, "events": [{"title": "Winnie-the-Pooh at London Zoo", "url": "https://www.londonzoo.org/plan-your-visit/events/winnie-the-pooh-london-zoo", "when": "Until 1 November, 10:00–17:00 (16:00 from 24 October)", "price": "Free with admission (adults £31.80, 3–15s £22.20)", "age": "Suitable for all", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Fashion and Textile Museum", "address": "83 Bermondsey Street", "postcode": "SE1 3XF", "lat": 51.501525, "lng": -0.081919, "approx": false, "events": [{"title": "Ossie Clark + Celia Birtwell", "url": "https://fashiontextilemuseum.org/exhibitionsdisplays/ossie-clark-celia-birtwell", "when": "Tuesday–Saturday until 11 April, 11:00–18:00", "price": "Adults £12, 12–17s £10, under-12s free", "age": "", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Royal Academy", "address": "Burlington House, Piccadilly", "postcode": "W1J 0BD", "lat": 51.509099, "lng": -0.139576, "approx": false, "events": [{"title": "Painting the French Riviera", "url": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera", "when": "Tuesday–Sunday until 31 January, 10:00–18:00", "price": "Adults £26, under-16s free", "age": "", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Barbican Centre", "address": "Silk Street", "postcode": "EC2Y 8DS", "lat": 51.519961, "lng": -0.094103, "approx": false, "events": [{"title": "Beethoven's Pastoral: Pam Tanowitz Dance", "url": "https://www.barbican.org.uk/whats-on/2026/event/pam-tanowitz-dance-pastoral", "when": "1–3 October, 19:45 (also 14:30 Saturday 3 October)", "price": "£18–£45", "age": "10+", "category": "weekend", "featured": false, "blurb": ""}, {"title": "Family Film Club: The Songbird's Secret", "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-the-songbirds-secret", "when": "Saturday 3 October, 11:00", "price": "Adults £5, under-18s £2.50", "age": "6+", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "Polka Theatre", "address": "240 The Broadway", "postcode": "SW19 1SB", "lat": 51.419706, "lng": -0.194497, "approx": false, "events": [{"title": "The Three Little Pigs", "url": "https://polkatheatre.com/event/the-three-little-pigs/", "when": "1–4 October, various start times", "price": "£10", "age": "3–7", "category": "weekend", "featured": false, "blurb": ""}, {"title": "A Class of Your Own", "url": "https://polkatheatre.com/event/a-class-of-your-own/", "when": "Saturday and Sunday, 11:30 and 15:00", "price": "£14", "age": "8–12", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "British Museum", "address": "Great Russell Street", "postcode": "WC1B 3DG", "lat": 51.519364, "lng": -0.126848, "approx": false, "events": [{"title": "Korea", "url": "https://www.britishmuseum.org/exhibitions/korea", "when": "Daily until 31 January, 10:00–17:00 (Fri until 20:30)", "price": "Adults £20, under-16s free", "age": "", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Jacksons Lane Arts Centre", "address": "269a Archway Road", "postcode": "N6 5AA", "lat": 51.57711, "lng": -0.146368, "approx": false, "events": [{"title": "That's How the World Was Made!", "url": "https://www.jacksonslane.org.uk/events/thats-how-the-world-was-made-nell-phoenix/", "when": "Saturday 3 October, 14:00", "price": "£10–£20", "age": "8+", "category": "weekend", "featured": false, "blurb": ""}, {"title": "On Your Bike Baffo", "url": "https://www.jacksonslane.org.uk/events/on-your-bike-baffo", "when": "Sunday 4 October, 11:00 and 14:00", "price": "£10–£20", "age": "3–9", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "artsdepot", "address": "5 Nether Street, Tally Ho Corner", "postcode": "N12 0GA", "lat": 51.612818, "lng": -0.176705, "approx": false, "events": [{"title": "Toto the Ninja Cat and the Great Snake Escape", "url": "https://www.artsdepot.co.uk/event/toto-the-ninja-cat-and-the-great-snake-escape/", "when": "Saturday and Sunday, 10:30 and 13:30", "price": "£15", "age": "5+", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "Unicorn Theatre", "address": "147 Tooley Street", "postcode": "SE1 2HZ", "lat": 51.503906, "lng": -0.080709, "approx": false, "events": [{"title": "Pocket Money", "url": "https://www.unicorntheatre.com/events/pocket-money", "when": "Until 1 November, various start times", "price": "£3 for first 40% of performances, then £15", "age": "7–12", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Sussex Mansions", "address": "79–85 Old Brompton Road", "postcode": "SW7 3LD", "lat": 51.492457, "lng": -0.176989, "approx": false, "events": [{"title": "Body Worlds: The Anatomy of Happiness", "url": "https://fever.pxf.io/rEykNd", "when": "Until 21 March, various timeslots", "price": "Adults £24.61, 6–17s £16.05", "age": "Suitable for all (some mature content)", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Serpentine North", "address": "West Carriage Drive", "postcode": "W2 2AR", "lat": 51.50707, "lng": -0.171261, "approx": false, "events": [{"title": "Amar Kanwar Exhibition", "url": "https://www.serpentinegalleries.org/whats-on/amar-kanwar-exhibition/", "when": "Tuesday–Sunday until 31 January, 10:00–17:00", "price": "FREE, booking required", "age": "", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Frameless", "address": "6 Marble Arch", "postcode": "W1H 7AP", "lat": 51.51769878002892, "lng": -0.16121160057887107, "approx": true, "events": [{"title": "Nikon Comedy Wildlife Awards", "url": "https://frameless.com/artist-residencies/comedy-wildlife-awards/", "when": "Until January 2027, daily (hours vary)", "price": "Adults £31.50, 3–15s £22, under-3s free at peak", "age": "Suitable for all", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Little Angel Theatre", "address": "14 Dagmar Passage", "postcode": "N1 2DN", "lat": 51.539016, "lng": -0.101267, "approx": false, "events": [{"title": "Pip and Posy Live on Stage", "url": "https://www.littleangeltheatre.com/whats-on/pip-and-posy-live-on-stage", "when": "Until 22 November, various start times", "price": "Adults £16, 1–17s £14", "age": "2–5", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Little Angel Studios", "address": "Sebbon Street", "postcode": "N1 2EH", "lat": 51.54125, "lng": -0.100409, "approx": false, "events": [{"title": "The Pied Piper: A Rat's Tale", "url": "https://www.littleangeltheatre.com/whats-on/the-pied-piper-a-rats-tale", "when": "Until 7 November, various start times", "price": "Adults £16, 1–17s £14", "age": "5+", "category": "ongoing", "featured": false, "blurb": ""}]}, {"name": "Puppet Theatre Barge", "address": "Richmond", "postcode": "TW10 6UT", "lat": 51.454158, "lng": -0.302902, "approx": false, "events": [{"title": "The Three Little Wolves", "url": "https://www.tickettailor.com/events/artofthepuppetltd/2152183", "when": "Various days until 4 October", "price": "Adults £15, under-17s £12", "age": "4–10", "category": "weekend", "featured": false, "blurb": ""}]}, {"name": "Half Moon Young People's Theatre", "address": "43 White Horse Road", "postcode": "E1 0ND", "lat": 51.513692, "lng": -0.04062, "approx": false, "events": [{"title": "Groove Into Pixel Land (30% off: DADSINLONDON30)", "url": "https://www.halfmoon.org.uk/events/groove-into-pixel-land/", "when": "Saturday 7 November, 11:00 and 14:00", "price": "30% off with code", "age": "5–10", "category": "later", "featured": false, "blurb": "A quest through a virtual world, with interactive theatre and live music."}]}], "counts": {"weekend": 13, "ongoing": 15, "later": 1}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var LABEL = { weekend: 'This weekend', ongoing: 'Ongoing', later: 'Later' };
+  var ORDER = ['weekend', 'ongoing', 'later'];
+  var active = { weekend: true, ongoing: true, later: true };
+  var selected = null, shownCount = 0;
+  var $ = function (id) { return document.getElementById(id); };
+  var app = $('app'), panel = $('panel');
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function safeUrl(u) { return typeof u === 'string' && u.indexOf('https://') === 0 ? u : null; }
+  function isMobile() { return matchMedia('(max-width: 820px)').matches; }
+  function isOpen() { return panel.dataset.open === 'true'; }
+
+  var src = $('src'); var su = safeUrl(D.source.url); if (su) { src.href = su; src.target = '_blank'; } else { src.removeAttribute('href'); }
+  try { $('issued').textContent = 'issue of ' + new Date(D.source.issued + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }); } catch (e) {}
+
+  var map = L.map('map', { zoomControl: false, attributionControl: false, zoomSnap: 0.25, zoomDelta: 1, wheelPxPerZoomLevel: 90 });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+  L.control.attribution({ position: 'bottomleft', prefix: false }).addTo(map);
+  map.setView([51.515, -0.12], 12);
+
+  function insets() {
+    var h = $('map').clientHeight, hudBottom = $('hud').getBoundingClientRect().bottom;
+    if (isMobile()) return { tl: [24, hudBottom + 16], br: [24, (isOpen() ? h * 0.46 + 16 : 70) + 8] };
+    return { tl: [24, 24], br: [(isOpen() ? 404 : 24) + 24, 24] };
+  }
+  function visibleVenues() { return D.venues.filter(function (v) { return visibleEvents(v).length; }); }
+  function fit() {
+    var vs = visibleVenues(); if (!vs.length) return;
+    var i = insets();
+    map.fitBounds(L.latLngBounds(vs.map(function (v) { return [v.lat, v.lng]; })), { paddingTopLeft: i.tl, paddingBottomRight: i.br, maxZoom: 15, animate: false });
+  }
+
+  /* filters */
+  ORDER.forEach(function (c) {
+    if (!D.counts[c]) return;
+    var b = el('button', 'chip'); b.type = 'button'; b.setAttribute('aria-pressed', 'true');
+    b.appendChild(el('span', 'key ' + c)); b.appendChild(document.createTextNode(LABEL[c])); b.appendChild(el('b', '', String(D.counts[c])));
+    b.addEventListener('click', function () { active[c] = !active[c]; b.setAttribute('aria-pressed', String(active[c])); render(); });
+    $('filters').appendChild(b);
+  });
+
+  /* panel toggle */
+  function setOpen(open) {
+    panel.dataset.open = String(open); app.dataset.open = String(open);
+    $('ptoggle').setAttribute('aria-expanded', String(open));
+  }
+  $('ptoggle').addEventListener('click', function () { setOpen(!isOpen()); });
+  if (isMobile()) setOpen(false);
+
+  /* venues */
+  function visibleEvents(v) { return v.events.filter(function (e) { return active[e.category]; }); }
+  function topCat(evs) { for (var i = 0; i < ORDER.length; i++) { if (evs.some(function (e) { return e.category === ORDER[i]; })) return ORDER[i]; } return 'ongoing'; }
+  var markers = [], cards = [];
+  D.venues.forEach(function (v, i) {
+    var b = el('button', 'mk'); b.type = 'button';
+    var dot = el('span', 'dot'); b.appendChild(dot); b.appendChild(el('span', 'tag', v.name));
+    L.DomEvent.disableClickPropagation(b);
+    b.addEventListener('click', function () { select(i, false); });
+    var mk = L.marker([v.lat, v.lng], { icon: L.divIcon({ className: 'mkicon', html: b, iconSize: [0, 0] }), keyboard: false }).addTo(map);
+    markers.push({ el: b, dot: dot, mk: mk });
+    var c = el('article', 'card'); c.tabIndex = 0;
+    c.addEventListener('click', function (ev) { if (ev.target.closest('a')) return; select(i, true); });
+    c.addEventListener('keydown', function (ev) { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === c) { ev.preventDefault(); select(i, true); } });
+    cards.push(c);
+  });
+
+  function renderCard(i) {
+    var v = D.venues[i], c = cards[i], evs = visibleEvents(v);
+    c.textContent = '';
+    c.appendChild(el('h2', '', v.name));
+    c.appendChild(el('p', 'addr', v.address + ', ' + v.postcode));
+    evs.forEach(function (e) {
+      var d = el('div', 'ev');
+      d.appendChild(el('span', 'cat ' + e.category, LABEL[e.category]));
+      var t = el('p', 't'); var u = safeUrl(e.url);
+      if (u) { var a = el('a', '', e.title); a.href = u; a.target = '_blank'; a.rel = 'noopener'; t.appendChild(a); } else { t.textContent = e.title; }
+      d.appendChild(t);
+      if (e.when) d.appendChild(el('p', 'when', e.when));
+      var meta = [e.price, e.age && ('Ages: ' + e.age)].filter(Boolean).join(' · ');
+      if (meta) d.appendChild(el('p', '', meta));
+      if (e.blurb) d.appendChild(el('p', '', e.blurb));
+      c.appendChild(d);
+    });
+  }
+
+  function render() {
+    var list = $('list'); list.textContent = '';
+    var shown = [];
+    D.venues.forEach(function (v, i) {
+      var evs = visibleEvents(v), m = markers[i];
+      if (!evs.length) { m.el.hidden = true; return; }
+      m.el.hidden = false;
+      var cat = topCat(evs);
+      m.el.className = 'mk ' + cat + (v.approx ? ' approx' : '') + (selected === i ? ' sel' : '');
+      m.mk.setZIndexOffset(selected === i ? 1000 : cat === 'weekend' ? 200 : 0);
+      m.dot.textContent = evs.length > 1 ? String(evs.length) : '';
+      m.el.setAttribute('aria-label', v.name + ', ' + evs.length + (evs.length > 1 ? ' events' : ' event'));
+      renderCard(i); shown.push({ i: i, cat: cat, name: v.name });
+    });
+    shown.sort(function (a, b) { return ORDER.indexOf(a.cat) - ORDER.indexOf(b.cat) || a.name.localeCompare(b.name); });
+    shown.forEach(function (s) { cards[s.i].className = 'card' + (selected === s.i ? ' sel' : ''); list.appendChild(cards[s.i]); });
+    shownCount = shown.length;
+    $('plabel').textContent = shownCount + (shownCount === 1 ? ' venue' : ' venues');
+    $('empty').style.display = shownCount ? 'none' : 'grid';
+  }
+
+  function select(i, recenter) {
+    selected = i;
+    if (!isOpen()) setOpen(true);
+    render();
+    if (recenter) {
+      var v = D.venues[i], p = insets();
+      map.fitBounds(L.latLngBounds([[v.lat, v.lng]]), { paddingTopLeft: p.tl, paddingBottomRight: p.br, maxZoom: Math.max(map.getZoom(), 15), animate: true });
+    } else { cards[i].scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  }
+
+  $('zin').addEventListener('click', function () { map.zoomIn(); });
+  $('zout').addEventListener('click', function () { map.zoomOut(); });
+  $('reset').addEventListener('click', function () { selected = null; render(); fit(); });
+  var fullBtn = $('full');
+  if (!document.fullscreenEnabled) { fullBtn.hidden = true; }
+  fullBtn.addEventListener('click', function () {
+    try {
+      var p = document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+      if (p && p.catch) p.catch(function () { fullBtn.hidden = true; });
+    } catch (e) { fullBtn.hidden = true; }
+  });
+  window.addEventListener('resize', function () { map.invalidateSize(); });
+
+  render(); fit();
+})();
+</script>
+</body>
+</html>
