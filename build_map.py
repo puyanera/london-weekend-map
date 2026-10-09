@@ -17,21 +17,44 @@ import requests
 HERE = Path(__file__).parent
 
 
-def geocode(postcodes):
-    """postcode -> (lat, lng, precise). Falls back to the outcode centroid."""
-    out = {}
-    r = requests.post("https://api.postcodes.io/postcodes", json={"postcodes": postcodes}, timeout=20)
-    r.raise_for_status()
-    for item in r.json()["result"]:
-        if item["result"]:
-            out[item["query"]] = (item["result"]["latitude"], item["result"]["longitude"], True)
-    for pc in postcodes:
-        if pc in out:
-            continue
-        resp = requests.get(f"https://api.postcodes.io/outcodes/{pc.split()[0]}", timeout=20)
-        if resp.ok and resp.json().get("result"):
-            res = resp.json()["result"]
-            out[pc] = (res["latitude"], res["longitude"], False)
+CACHE = HERE / "geocache.json"
+LONDON = (51.2, 51.8, -0.6, 0.4)  # lat min/max, lng min/max sanity box for hand-supplied coordinates
+
+
+def load_cache():
+    try:
+        return json.loads(CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def geocode(postcodes, cache):
+    """postcode -> (lat, lng, precise).
+
+    Order: saved cache (geocache.json), then postcodes.io, with the outcode
+    centroid as the fallback for postcodes it does not know. If postcodes.io
+    cannot be reached (for example a sandbox with a network allowlist), the
+    postcodes it would have resolved are left out and handled by the caller.
+    """
+    out = {pc: tuple(cache[pc]) for pc in postcodes if pc in cache}
+    todo = [pc for pc in postcodes if pc not in out]
+    if not todo:
+        return out
+    try:
+        r = requests.post("https://api.postcodes.io/postcodes", json={"postcodes": todo}, timeout=20)
+        r.raise_for_status()
+        for item in r.json()["result"]:
+            if item["result"]:
+                out[item["query"]] = (item["result"]["latitude"], item["result"]["longitude"], True)
+        for pc in todo:
+            if pc in out:
+                continue
+            resp = requests.get(f"https://api.postcodes.io/outcodes/{pc.split()[0]}", timeout=20)
+            if resp.ok and resp.json().get("result"):
+                res = resp.json()["result"]
+                out[pc] = (res["latitude"], res["longitude"], False)
+    except requests.RequestException as exc:
+        print(f"postcodes.io not reachable ({exc.__class__.__name__}): {len(todo)} postcode(s) not looked up")
     return out
 
 
@@ -41,7 +64,27 @@ def main():
     data = json.loads(src.read_text(encoding="utf-8"))
     events = data["events"]
 
-    coords = geocode(sorted({e["postcode"] for e in events}))
+    cache = load_cache()
+    coords = geocode(sorted({e["postcode"] for e in events}), cache)
+    new = {pc: list(v) for pc, v in coords.items() if pc not in cache}
+    if new:
+        cache.update(new)
+        rows = [f'{json.dumps(pc)}: {json.dumps(v)}' for pc, v in sorted(cache.items())]
+        CACHE.write_text("{\n" + ",\n".join(rows) + "\n}\n", encoding="utf-8")
+        print(f"added {len(new)} postcode(s) to {CACHE.name}")
+
+    # Last resort: approximate coordinates supplied in events.json (flagged as approximate on the map).
+    manual = []
+    for e in events:
+        pc = e["postcode"]
+        lat, lng = e.get("lat"), e.get("lng")
+        if pc not in coords and isinstance(lat, (int, float)) and isinstance(lng, (int, float)) \
+                and LONDON[0] <= lat <= LONDON[1] and LONDON[2] <= lng <= LONDON[3]:
+            coords[pc] = (lat, lng, False)
+            manual.append(e["venue"])
+    if manual:
+        print("using supplied approximate coordinates for:", ", ".join(sorted(set(manual))))
+
     unplaced = [e for e in events if e["postcode"] not in coords]
     events = [e for e in events if e["postcode"] in coords]
 

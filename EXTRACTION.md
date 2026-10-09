@@ -49,6 +49,14 @@ Output: `events.json` in the repo root, then run `python build_map.py`.
 - `featured`: true only for the numbered main items (1 to 5). For those, write a one-sentence `blurb` (under 120 characters) in your own words. Otherwise `blurb` is an empty string.
 - `price`, `age`, `when`: copy as printed, trimmed. Ignore stale notes such as past dates inside a price line.
 
+## Geocoding and the fallback
+
+`build_map.py` looks postcodes up in `geocache.json` first, then in postcodes.io. In a sandbox where postcodes.io is blocked, postcodes that are not yet in the cache cannot be looked up, and the script prints `could not place: <titles>`.
+
+When that happens, add approximate `"lat"` and `"lng"` (decimal degrees, 4 places) to those events in `events.json` from your knowledge of where the venue is, then run `python build_map.py` again. The map marks such venues with a dotted ring as approximate. Only do this for events the script could not place. Never invent coordinates for a venue you cannot locate; leave that event out and say so in your report.
+
+The script adds every postcode it resolves through postcodes.io to `geocache.json`. Commit that file when it changes.
+
 ## category
 
 - `weekend`: happens on, or is specifically scheduled around, the weekend in the subject. This includes "Saturday and Sunday" shows, "Weekends and half term until..." runs, and short runs that include the weekend dates.
