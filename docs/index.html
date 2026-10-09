@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700&display=swap">
 <style>
-/* Layout: a live Leaflet map fills the screen. A title card floats top-left, the venue list floats right (bottom sheet on phones). Weekend pins are cobalt and solid, ongoing pins are grey rings. */
+/* Layout: a live Leaflet map fills the screen. A title card floats top-left. Clicking a dot opens one detail card (right on desktop, bottom sheet on phones). Weekend pins are cobalt and solid, ongoing pins are grey rings. */
 :root {
   --bg: #F2F4F3;
   --surface: #FFFFFF;
-  --glass: rgba(255, 255, 255, .95);
+  --glass: rgba(255, 255, 255, .96);
   --ink: #17201D;
   --ink-soft: #56635E;
   --line: #DCE1DE;
@@ -25,13 +25,13 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .95); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
+    --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .96); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
     --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .95); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
+  --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .96); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
   --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
   color-scheme: dark;
 }
@@ -40,7 +40,7 @@ html, body { height: 100%; }
 body { background: var(--bg); color: var(--ink); font: 15px/1.45 var(--font-body); margin: 0; overflow: hidden; }
 .app { position: relative; height: 100%; overflow: hidden; background: var(--bg); }
 button { font-family: inherit; }
-button:focus-visible, .mk:focus-visible, .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button:focus-visible, .mk:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 #map { position: absolute; inset: 0; z-index: 0; background: #e8ecef; font-family: var(--font-body); }
 .leaflet-control-attribution { font-size: 11px; }
@@ -52,7 +52,8 @@ button:focus-visible, .mk:focus-visible, .card:focus-visible { outline: 2px soli
 .mk.approx .dot { outline: 2px dotted #4a5550; outline-offset: 2px; }
 .mk .tag { position: absolute; left: 50%; bottom: calc(100% + 7px); transform: translateX(-50%); white-space: nowrap; padding: 3px 8px; border-radius: 4px; background: #17201D; color: #fff; font: 500 12px var(--font-body); pointer-events: none; opacity: 0; }
 .mk:hover .tag, .mk:focus-visible .tag, .mk.sel .tag { opacity: 1; }
-.mk.sel .dot { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 35%, transparent), 0 1px 5px rgba(0,0,0,.4); }
+.mk.sel .dot { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 40%, transparent), 0 1px 5px rgba(0,0,0,.4); }
+.mk.sel.ongoing .dot, .mk.sel.later .dot { box-shadow: 0 0 0 6px rgba(91, 103, 97, .35), 0 1px 3px rgba(0,0,0,.3); }
 
 .hud { position: absolute; z-index: 10; left: 12px; top: 12px; max-width: min(460px, calc(100% - 24px)); padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--glass); }
 .kicker { margin: 0 0 2px; font: 500 11px/1.3 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
@@ -65,58 +66,45 @@ h1 { margin: 0 0 10px; font-size: clamp(20px, 3vw, 28px); line-height: 1.1; font
 .key.ongoing { background: transparent; border: 2px solid var(--ongoing); }
 .key.later { background: transparent; border: 2px dashed var(--ongoing); }
 .chip b { font: 500 12px var(--font-mono); color: var(--ink-soft); }
+.hint { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.hint a { color: inherit; }
 
 .ctl { position: absolute; z-index: 10; left: 12px; bottom: 34px; display: flex; flex-direction: column; gap: 4px; }
 .ctl button { min-width: 38px; height: 38px; padding: 0 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--glass); color: var(--ink); font: 500 17px var(--font-body); cursor: pointer; }
 .ctl button.sm { font-size: 12px; }
 .empty { position: absolute; inset: 0; z-index: 5; display: none; place-items: center; color: var(--ink-soft); pointer-events: none; }
 
-.panel { position: absolute; z-index: 10; right: 12px; top: 12px; bottom: 12px; width: 380px; display: flex; flex-direction: column; gap: 8px; min-height: 0; pointer-events: none; }
-.panel > * { pointer-events: auto; }
-.ptoggle { align-self: flex-end; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--glass); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; }
-.ptoggle .chev { width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .2s; }
-.panel[data-open="true"] .ptoggle .chev { transform: rotate(135deg); }
-.panel[data-open="false"] { bottom: auto; width: auto; }
-.panel[data-open="false"] .list, .panel[data-open="false"] .note { display: none; }
-.list { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding: 2px; }
-.card { flex: none; border: 1px solid var(--line); border-radius: 8px; background: var(--glass); padding: 12px 14px; cursor: pointer; }
-.card.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.card h2 { margin: 0; font-size: 16px; line-height: 1.25; font-weight: 700; }
+.detail { position: absolute; z-index: 10; right: 12px; top: 12px; width: 380px; max-height: calc(100% - 24px); overflow-y: auto; padding: 14px 16px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--glass); box-shadow: 0 6px 24px rgba(0,0,0,.22); }
+.detail h2 { margin: 0; padding-right: 36px; font-size: 18px; line-height: 1.25; font-weight: 700; }
 .addr { margin: 2px 0 0; font: 400 12px/1.4 var(--font-mono); color: var(--ink-soft); }
-.ev { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--line); }
+.close { position: absolute; right: 8px; top: 8px; width: 32px; height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font-size: 18px; line-height: 1; cursor: pointer; }
+.ev { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
 .ev .t { margin: 0; font-weight: 500; }
 .ev .t a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .ev .cat { font: 500 11px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--accent); }
 .ev .cat.ongoing, .ev .cat.later { color: var(--ink-soft); }
 .ev p { margin: 2px 0 0; color: var(--ink-soft); font-size: 13.5px; }
 .ev .when { font: 400 12.5px/1.4 var(--font-mono); color: var(--ink); }
-.note { margin: 0; padding: 6px 12px; border-radius: 6px; background: var(--glass); color: var(--ink-soft); font-size: 12px; }
-.note a { color: inherit; }
 
 @media (max-width: 820px) {
   .hud { right: 12px; max-width: none; }
-  .panel { left: 8px; right: 8px; top: auto; bottom: 8px; width: auto; max-height: 46%; }
-  .panel[data-open="false"] { left: auto; }
-  .ctl { left: auto; right: 12px; bottom: 80px; }
-  .app[data-open="true"] .ctl { bottom: calc(46% + 20px); }
+  .detail { left: 8px; right: 8px; top: auto; bottom: 8px; width: auto; max-height: 46%; }
+  .ctl { left: auto; right: 12px; bottom: 34px; }
+  .app[data-detail="true"] .ctl { bottom: calc(46% + 20px); }
 }
-@media (prefers-reduced-motion: reduce) { .ptoggle .chev { transition: none; } }
 </style>
 </head>
 <body>
-<div class="app" id="app" data-open="true">
+<div class="app" id="app" data-detail="false">
   <div id="map"></div>
   <div class="hud" id="hud">
     <p class="kicker">From Dads in London · <span id="issued"></span></p>
     <h1>London with the kids, <span id="weekend"></span></h1>
     <div class="filters" id="filters" role="group" aria-label="Show on map"></div>
+    <p class="hint">Tap a dot for details. Dotted ring: approximate position. <a id="src" href="#" rel="noopener">Read the newsletter</a></p>
   </div>
   <div class="ctl"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="reset" class="sm" aria-label="Reset view">Fit</button><button id="full" class="sm" aria-label="Full screen">Full</button></div>
-  <aside class="panel" id="panel" data-open="true" aria-label="Venues">
-    <button class="ptoggle" id="ptoggle" type="button" aria-expanded="true"><span id="plabel"></span><span class="chev"></span></button>
-    <div class="list" id="list"></div>
-    <p class="note">Dotted ring: pinned at the postcode district centre. <a id="src" href="#" rel="noopener">Read the newsletter</a></p>
-  </aside>
+  <aside class="detail" id="detail" hidden aria-live="polite"></aside>
   <div class="empty" id="empty">Nothing selected to show.</div>
 </div>
 
@@ -126,15 +114,14 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
   var LABEL = { weekend: 'This weekend', ongoing: 'Ongoing', later: 'Later' };
   var ORDER = ['weekend', 'ongoing', 'later'];
   var active = { weekend: true, ongoing: true, later: true };
-  var selected = null, shownCount = 0;
+  var selected = null;
   var $ = function (id) { return document.getElementById(id); };
-  var app = $('app'), panel = $('panel');
+  var app = $('app'), detail = $('detail');
   $('weekend').textContent = D.source.weekend_label;
   document.title = 'London Weekend Map, ' + D.source.weekend_label;
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function safeUrl(u) { return typeof u === 'string' && u.indexOf('https://') === 0 ? u : null; }
   function isMobile() { return matchMedia('(max-width: 820px)').matches; }
-  function isOpen() { return panel.dataset.open === 'true'; }
 
   var src = $('src'); var su = safeUrl(D.source.url); if (su) { src.href = su; src.target = '_blank'; } else { src.removeAttribute('href'); }
   try { $('issued').textContent = 'issue of ' + new Date(D.source.issued + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }); } catch (e) {}
@@ -144,15 +131,17 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
   L.control.attribution({ position: 'bottomleft', prefix: false }).addTo(map);
   map.setView([51.515, -0.12], 12);
 
-  function insets() {
+  /* padding that keeps dots clear of the floating cards */
+  function insets(withDetail) {
     var h = $('map').clientHeight, hudBottom = $('hud').getBoundingClientRect().bottom;
-    if (isMobile()) return { tl: [24, hudBottom + 16], br: [24, (isOpen() ? h * 0.46 + 16 : 70) + 8] };
-    return { tl: [24, 24], br: [(isOpen() ? 404 : 24) + 24, 24] };
+    if (isMobile()) return { tl: [24, hudBottom + 16], br: [24, (withDetail ? h * 0.46 : 0) + 24] };
+    return { tl: [24, hudBottom + 16], br: [(withDetail ? 404 : 0) + 24, 24] };
   }
-  function visibleVenues() { return D.venues.filter(function (v) { return visibleEvents(v).length; }); }
+  function visibleEvents(v) { return v.events.filter(function (e) { return active[e.category]; }); }
+  function topCat(evs) { for (var i = 0; i < ORDER.length; i++) { if (evs.some(function (e) { return e.category === ORDER[i]; })) return ORDER[i]; } return 'ongoing'; }
   function fit() {
-    var vs = visibleVenues(); if (!vs.length) return;
-    var i = insets();
+    var vs = D.venues.filter(function (v) { return visibleEvents(v).length; }); if (!vs.length) return;
+    var i = insets(false);
     map.fitBounds(L.latLngBounds(vs.map(function (v) { return [v.lat, v.lng]; })), { paddingTopLeft: i.tl, paddingBottomRight: i.br, maxZoom: 15, animate: false });
   }
 
@@ -165,36 +154,25 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
     $('filters').appendChild(b);
   });
 
-  /* panel toggle */
-  function setOpen(open) {
-    panel.dataset.open = String(open); app.dataset.open = String(open);
-    $('ptoggle').setAttribute('aria-expanded', String(open));
-  }
-  $('ptoggle').addEventListener('click', function () { setOpen(!isOpen()); });
-  if (isMobile()) setOpen(false);
-
-  /* venues */
-  function visibleEvents(v) { return v.events.filter(function (e) { return active[e.category]; }); }
-  function topCat(evs) { for (var i = 0; i < ORDER.length; i++) { if (evs.some(function (e) { return e.category === ORDER[i]; })) return ORDER[i]; } return 'ongoing'; }
-  var markers = [], cards = [];
+  /* markers */
+  var markers = [];
   D.venues.forEach(function (v, i) {
     var b = el('button', 'mk'); b.type = 'button';
     var dot = el('span', 'dot'); b.appendChild(dot); b.appendChild(el('span', 'tag', v.name));
     L.DomEvent.disableClickPropagation(b);
-    b.addEventListener('click', function () { select(i, false); });
+    b.addEventListener('click', function () { select(i); });
     var mk = L.marker([v.lat, v.lng], { icon: L.divIcon({ className: 'mkicon', html: b, iconSize: [0, 0] }), keyboard: false }).addTo(map);
     markers.push({ el: b, dot: dot, mk: mk });
-    var c = el('article', 'card'); c.tabIndex = 0;
-    c.addEventListener('click', function (ev) { if (ev.target.closest('a')) return; select(i, true); });
-    c.addEventListener('keydown', function (ev) { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === c) { ev.preventDefault(); select(i, true); } });
-    cards.push(c);
   });
 
-  function renderCard(i) {
-    var v = D.venues[i], c = cards[i], evs = visibleEvents(v);
-    c.textContent = '';
-    c.appendChild(el('h2', '', v.name));
-    c.appendChild(el('p', 'addr', v.address + ', ' + v.postcode));
+  /* the single detail card */
+  function showDetail(i) {
+    var v = D.venues[i], evs = visibleEvents(v);
+    detail.textContent = '';
+    var x = el('button', 'close', '×'); x.type = 'button'; x.setAttribute('aria-label', 'Close'); x.addEventListener('click', deselect);
+    detail.appendChild(x);
+    detail.appendChild(el('h2', '', v.name));
+    detail.appendChild(el('p', 'addr', v.address + ', ' + v.postcode + (v.approx ? ' (approximate position)' : '')));
     evs.forEach(function (e) {
       var d = el('div', 'ev');
       d.appendChild(el('span', 'cat ' + e.category, LABEL[e.category]));
@@ -205,44 +183,45 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
       var meta = [e.price, e.age && ('Ages: ' + e.age)].filter(Boolean).join(' · ');
       if (meta) d.appendChild(el('p', '', meta));
       if (e.blurb) d.appendChild(el('p', '', e.blurb));
-      c.appendChild(d);
+      detail.appendChild(d);
     });
+    detail.hidden = false; detail.scrollTop = 0; app.dataset.detail = 'true';
   }
+  function hideDetail() { detail.hidden = true; app.dataset.detail = 'false'; }
 
   function render() {
-    var list = $('list'); list.textContent = '';
-    var shown = [];
+    var any = 0;
     D.venues.forEach(function (v, i) {
       var evs = visibleEvents(v), m = markers[i];
       if (!evs.length) { m.el.hidden = true; return; }
+      any++;
       m.el.hidden = false;
       var cat = topCat(evs);
       m.el.className = 'mk ' + cat + (v.approx ? ' approx' : '') + (selected === i ? ' sel' : '');
       m.mk.setZIndexOffset(selected === i ? 1000 : cat === 'weekend' ? 200 : 0);
       m.dot.textContent = evs.length > 1 ? String(evs.length) : '';
       m.el.setAttribute('aria-label', v.name + ', ' + evs.length + (evs.length > 1 ? ' events' : ' event'));
-      renderCard(i); shown.push({ i: i, cat: cat, name: v.name });
     });
-    shown.sort(function (a, b) { return ORDER.indexOf(a.cat) - ORDER.indexOf(b.cat) || a.name.localeCompare(b.name); });
-    shown.forEach(function (s) { cards[s.i].className = 'card' + (selected === s.i ? ' sel' : ''); list.appendChild(cards[s.i]); });
-    shownCount = shown.length;
-    $('plabel').textContent = shownCount + (shownCount === 1 ? ' venue' : ' venues');
-    $('empty').style.display = shownCount ? 'none' : 'grid';
+    $('empty').style.display = any ? 'none' : 'grid';
+    if (selected !== null) {
+      if (visibleEvents(D.venues[selected]).length) showDetail(selected);
+      else { selected = null; hideDetail(); }
+    }
   }
 
-  function select(i, recenter) {
-    selected = i;
-    if (!isOpen()) setOpen(true);
-    render();
-    if (recenter) {
-      var v = D.venues[i], p = insets();
-      map.fitBounds(L.latLngBounds([[v.lat, v.lng]]), { paddingTopLeft: p.tl, paddingBottomRight: p.br, maxZoom: Math.max(map.getZoom(), 15), animate: true });
-    } else { cards[i].scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  function select(i) {
+    selected = i; render();
+    var v = D.venues[i], p = insets(true);
+    map.panInside([v.lat, v.lng], { paddingTopLeft: p.tl, paddingBottomRight: p.br, animate: true });
   }
+  function deselect() { selected = null; hideDetail(); render(); }
+
+  map.on('click', function () { if (selected !== null) deselect(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && selected !== null) deselect(); });
 
   $('zin').addEventListener('click', function () { map.zoomIn(); });
   $('zout').addEventListener('click', function () { map.zoomOut(); });
-  $('reset').addEventListener('click', function () { selected = null; render(); fit(); });
+  $('reset').addEventListener('click', function () { deselect(); fit(); });
   var fullBtn = $('full');
   if (!document.fullscreenEnabled) { fullBtn.hidden = true; }
   fullBtn.addEventListener('click', function () {
