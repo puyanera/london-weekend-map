@@ -1,11 +1,431 @@
 {
  "source": {
-  "subject": "32 things to do in London this weekend with the kids (10–11 October)",
-  "issued": "2026-10-07",
-  "weekend_label": "10–11 October",
-  "url": "https://www.dadsinlondon.com/p/32-things-to-do-in-london-this-weekend-with-the-kids-10-11-october"
+  "subject": "42 things to do in London this weekend with the kids (17–18 October)",
+  "issued": "2026-10-14",
+  "weekend_label": "17–18 October",
+  "url": "https://www.dadsinlondon.com/p/42-things-to-do-in-london-this-weekend-with-the-kids-17-18-october"
  },
  "venues": [
+  {
+   "name": "Citizen Hub Wimbledon",
+   "address": "267 The Broadway",
+   "postcode": "SW19 1SD",
+   "lat": 51.4219,
+   "lng": -0.206,
+   "approx": true,
+   "events": [
+    {
+     "title": "Goodfellas and Little Legends",
+     "url": "https://www.eventbrite.co.uk/e/goodfellas-and-little-legends-tickets-2000818518048",
+     "when": "Sunday 18 October, 11:00–13:00",
+     "price": "FREE – booking required",
+     "age": "2–11s only (maximum two children per adult)",
+     "category": "weekend",
+     "featured": true,
+     "blurb": "A free monthly play and games session for dads and male role models with their little ones."
+    }
+   ]
+  },
+  {
+   "name": "Merton Arts Space",
+   "address": "Wimbledon Library",
+   "postcode": "SW19 7QA",
+   "lat": 51.4226,
+   "lng": -0.2088,
+   "approx": true,
+   "events": [
+    {
+     "title": "The Duck with No Luck – family concert by The Mozart Players (ticket giveaway)",
+     "url": "https://wimbledonmusicfestival.co.uk/wimf2026-programme/family-concert-2/",
+     "when": "Sunday 8 November, 12:00–13:00 or 15:00–16:00",
+     "price": "Win two tickets (competition)",
+     "age": "3+",
+     "category": "later",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Royal Academy",
+   "address": "Burlington House, Piccadilly",
+   "postcode": "W1J 0BD",
+   "lat": 51.509099,
+   "lng": -0.139576,
+   "approx": false,
+   "events": [
+    {
+     "title": "Painting the French Riviera",
+     "url": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
+     "when": "Tuesday–Sunday until 31 January, 10:00–18:00 (Friday and Saturday until 21:00)",
+     "price": "Adults £26, under-16s free",
+     "age": "",
+     "category": "ongoing",
+     "featured": true,
+     "blurb": "Monet, Renoir, Matisse and Picasso on the coast, plus vintage railway travel posters."
+    }
+   ]
+  },
+  {
+   "name": "Tate Modern",
+   "address": "Bankside",
+   "postcode": "SE1 9TG",
+   "lat": 51.5076,
+   "lng": -0.0994,
+   "approx": true,
+   "events": [
+    {
+     "title": "Light and Magic: The Birth of Art Photography",
+     "url": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
+     "when": "Daily until 21 February, 10:00–18:00 (Friday and Saturday until 21:00)",
+     "price": "Adults £20, 12–18s £5, under-12s free",
+     "age": "",
+     "category": "ongoing",
+     "featured": true,
+     "blurb": "Over 200 soft-focus pictorialist prints by more than 80 photographers."
+    }
+   ]
+  },
+  {
+   "name": "West Norwood Library & Picturehouse",
+   "address": "1–7 Norwood High Street",
+   "postcode": "SE27 9JU",
+   "lat": 51.432084,
+   "lng": -0.101906,
+   "approx": false,
+   "events": [
+    {
+     "title": "Humdinger Words for Whippersnappers & Guttersnipes",
+     "url": "https://lambethfringe.com/events/humdinger-words-library",
+     "when": "Saturday 17 October, 14:30",
+     "price": "Adults £10, under-18s £8",
+     "age": "8+",
+     "category": "weekend",
+     "featured": true,
+     "blurb": "A comedy and poetry show mixing wordplay, balloon modelling and improvised rhymes."
+    }
+   ]
+  },
+  {
+   "name": "The Bread & Roses Theatre",
+   "address": "68 Clapham Manor Street",
+   "postcode": "SW4 6DZ",
+   "lat": 51.4625,
+   "lng": -0.1387,
+   "approx": true,
+   "events": [
+    {
+     "title": "Will BF: Moon Team IIIV",
+     "url": "https://lambethfringe.com/events/will-bf-moon-team-iiiv",
+     "when": "Saturday 17 October, 14:30",
+     "price": "Adults £10, under-18s £8",
+     "age": "Mild language; no age guidance provided",
+     "category": "weekend",
+     "featured": true,
+     "blurb": "A Star Wars spoof about a prince saving the galaxy, with sketches and a fake documentary."
+    }
+   ]
+  },
+  {
+   "name": "Vauxhall City Farm",
+   "address": "165 Tyers Street",
+   "postcode": "SE11 5HS",
+   "lat": 51.4872,
+   "lng": -0.1196,
+   "approx": true,
+   "events": [
+    {
+     "title": "The Magic Sweet Jar",
+     "url": "https://lambethfringe.com/events/magic-sweet-vauxhall",
+     "when": "Saturday 17 October, 12:00",
+     "price": "Adults £8, under-18s £6",
+     "age": "6+",
+     "category": "weekend",
+     "featured": true,
+     "blurb": "A puppet-and-song adventure through lemonade seas to defeat the Sugar King."
+    }
+   ]
+  },
+  {
+   "name": "St Martin-in-the-Fields",
+   "address": "Trafalgar Square",
+   "postcode": "WC2N 4JJ",
+   "lat": 51.509,
+   "lng": -0.1267,
+   "approx": true,
+   "events": [
+    {
+     "title": "Family Activity: Messages from the Heart",
+     "url": "https://www.stmartin-in-the-fields.org/whats-on/family-activity-messages-from-the-heart",
+     "when": "Saturday 17 October, 11:00",
+     "price": "FREE – no booking required",
+     "age": "5–13",
+     "category": "weekend",
+     "featured": true,
+     "blurb": "Families play vintage recordings on old audio kit, then record a message of their own."
+    }
+   ]
+  },
+  {
+   "name": "Lightroom",
+   "address": "12 Lewis Cubitt Square",
+   "postcode": "N1C 4DY",
+   "lat": 51.5368,
+   "lng": -0.1262,
+   "approx": true,
+   "events": [
+    {
+     "title": "Larger Than Life: Starring Wallace & Gromit, Shaun and More",
+     "url": "https://lightroom.uk/whats-on/larger-than-life",
+     "when": "Daily until 4 January, various timeslots throughout the day",
+     "price": "Adults £25, 3–18s £15, under-3s free",
+     "age": "Suitable for all",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "The Albany",
+   "address": "Douglas Way, Deptford",
+   "postcode": "SE8 4AG",
+   "lat": 51.4784,
+   "lng": -0.0257,
+   "approx": true,
+   "events": [
+    {
+     "title": "Bingo Saturdays",
+     "url": "https://www.thealbany.org.uk/events/bingo-saturdays",
+     "when": "Saturday 17 October, 13:00",
+     "price": "FREE",
+     "age": "Suitable for all",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Somerset House",
+   "address": "Strand",
+   "postcode": "WC2R 0RN",
+   "lat": 51.511,
+   "lng": -0.1172,
+   "approx": true,
+   "events": [
+    {
+     "title": "Salman Toor: Someone Like You",
+     "url": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
+     "when": "Daily until 10 January, 10:00–18:00",
+     "price": "Adults £16, under-19s free (includes the permanent collection)",
+     "age": "",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Barbican Cinema 2",
+   "address": "Beech Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Film Club: Kiki’s Delivery Service (dubbed)",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-kikis-delivery-service-dubbed",
+     "when": "Saturday 17 October, 11:00",
+     "price": "Adults £5, under-18s £2.50",
+     "age": "6+",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "National Gallery",
+   "address": "Trafalgar Square",
+   "postcode": "WC2N 5DN",
+   "lat": 51.5089,
+   "lng": -0.1283,
+   "approx": true,
+   "events": [
+    {
+     "title": "Renoir and Love",
+     "url": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
+     "when": "Daily until 31 January, 10:00–18:00 (Friday until 21:00)",
+     "price": "Adults £25, under-18s free",
+     "age": "",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Merton Arts Space at Wimbledon Library",
+   "address": "35 Wimbledon Hill Road",
+   "postcode": "SW19 7NB",
+   "lat": 51.4226,
+   "lng": -0.2088,
+   "approx": true,
+   "events": [
+    {
+     "title": "Ed Vere – Waffles & Julius",
+     "url": "https://www.wimbledonbookfest.org/events/ed-vere/",
+     "when": "Sunday 18 October, 10:00",
+     "price": "Adults £10, under-12s £7.50",
+     "age": "3+",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Jacksons Lane Arts Centre",
+   "address": "269a Archway Road",
+   "postcode": "N6 5AA",
+   "lat": 51.57711,
+   "lng": -0.146368,
+   "approx": false,
+   "events": [
+    {
+     "title": "The Luck Child and Other Strange Tales – Daniel Morden",
+     "url": "https://www.jacksonslane.org.uk/events/the-luck-child-and-other-strange-tales-daniel-morden/",
+     "when": "Saturday 17 October, 14:00",
+     "price": "£12.50 per person",
+     "age": "8+",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Half Moon Young People’s Theatre",
+   "address": "43 White Horse Road",
+   "postcode": "E1 0ND",
+   "lat": 51.513692,
+   "lng": -0.04062,
+   "approx": false,
+   "events": [
+    {
+     "title": "The Quest for Planet P",
+     "url": "https://www.halfmoon.org.uk/events/the-quest-for-planet-p/",
+     "when": "Saturday 17 October, 11:00 and 14:00",
+     "price": "£9 per person",
+     "age": "3–11",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "artsdepot",
+   "address": "5 Nether Street, Tally Ho Corner, North Finchley",
+   "postcode": "N12 0GA",
+   "lat": 51.612818,
+   "lng": -0.176705,
+   "approx": false,
+   "events": [
+    {
+     "title": "Nick Cope Family Show",
+     "url": "https://www.artsdepot.co.uk/event/nick-cope-family-show/",
+     "when": "Sunday 18 October, 11:00",
+     "price": "£15 per person",
+     "age": "3+",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    },
+    {
+     "title": "Surinderella",
+     "url": "https://www.artsdepot.co.uk/event/surinderella/",
+     "when": "Saturday 17 October, 14:30 and 19:30; Sunday 18 October, 18:00",
+     "price": "£15 per person",
+     "age": "3+",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "British Library",
+   "address": "96 Euston Road",
+   "postcode": "NW1 2DB",
+   "lat": 51.5299,
+   "lng": -0.1272,
+   "approx": true,
+   "events": [
+    {
+     "title": "Family Festival: Stories, Sign and Shine",
+     "url": "https://events.bl.uk/events/family-festival-stories-sign-and-shine",
+     "when": "Saturday 17 October, 12:00–16:00",
+     "price": "FREE – no booking required",
+     "age": "Suitable for all",
+     "category": "weekend",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Troubadour Wembley Park Theatre",
+   "address": "3 Fulton Road, Wembley",
+   "postcode": "HA9 0SP",
+   "lat": 51.556,
+   "lng": -0.2796,
+   "approx": true,
+   "events": [
+    {
+     "title": "High School Musical",
+     "url": "https://www.kxtickets.com/whats-on/high-school-musical",
+     "when": "12 October–3 January, various performance times",
+     "price": "£35–£199 per person",
+     "age": "6+; under-3s not admitted",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Design Museum",
+   "address": "224–238 Kensington High Street",
+   "postcode": "W8 6AG",
+   "lat": 51.499874,
+   "lng": -0.200163,
+   "approx": false,
+   "events": [
+    {
+     "title": "LAIKA presents Wildwood: The Exhibition",
+     "url": "https://designmuseum.org/exhibitions/laika-presents-wildwood-the-exhibition",
+     "when": "Until 10 January, 10:00–17:00 Monday–Thursday and 10:00–18:00 Friday–Sunday",
+     "price": "Adults £17.09, 6–15s £8.55, under-6s free",
+     "age": "",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    },
+    {
+     "title": "Es Devlin: Other Worlds",
+     "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
+     "when": "Until 4 April, 10:00–18:00 (until 17:00 Monday–Thursday)",
+     "price": "Adults £21, 6–15s £11, under-6s free",
+     "age": "",
+     "category": "ongoing",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
   {
    "name": "Science Museum",
    "address": "Exhibition Road",
@@ -21,8 +441,8 @@
      "price": "FREE – but you need to book a free admission ticket to enter",
      "age": "",
      "category": "ongoing",
-     "featured": true,
-     "blurb": "A free Pokémon trail through nine galleries of spacecraft, spacesuits and a piece of the Moon."
+     "featured": false,
+     "blurb": ""
     }
    ]
   },
@@ -41,38 +461,8 @@
      "price": "Adults £20.50, under-16s free",
      "age": "",
      "category": "ongoing",
-     "featured": true,
-     "blurb": "Over 60 works by Ryman, famed for his white squares, in the first major UK show in 30 years."
-    },
-    {
-     "title": "Family Film Club: Missing Link",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-missing-link",
-     "when": "Saturday 10 October, 11:00",
-     "price": "Adults £5, under-18s £2.50",
-     "age": "7+",
-     "category": "weekend",
      "featured": false,
      "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "London Aquatics Centre",
-   "address": "Queen Elizabeth Olympic Park, Stratford Cross",
-   "postcode": "E20 2ZQ",
-   "lat": 51.546316931623885,
-   "lng": -0.010648200854700855,
-   "approx": true,
-   "events": [
-    {
-     "title": "Swimming and inflatable sessions at the London Aquatics Centre",
-     "url": "https://londonaquaticscentre.org/",
-     "when": "Activities daily (see website for days and times)",
-     "price": "Usually £6–£10 per person, varies by activity",
-     "age": "Depends on the activity (see website)",
-     "category": "ongoing",
-     "featured": true,
-     "blurb": "Swim in an Olympic pool for about nine quid, with inflatable sessions for ages 5+ and 8+."
     }
    ]
   },
@@ -91,28 +481,8 @@
      "price": "FREE",
      "age": "",
      "category": "ongoing",
-     "featured": true,
-     "blurb": "Walk through 4,000 hanging yellow tubes in this free, touchable outdoor sculpture."
-    }
-   ]
-  },
-  {
-   "name": "artsdepot",
-   "address": "5 Nether Street, Tally Ho Corner",
-   "postcode": "N12 0GA",
-   "lat": 51.612818,
-   "lng": -0.176705,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Mystery of… artsdepot",
-     "url": "https://www.artsdepot.co.uk/event/the-mystery-of-artsdepot/",
-     "when": "Sunday 11 October, 12:00 and 14:30",
-     "price": "£13.75 per person",
-     "age": "7+",
-     "category": "weekend",
-     "featured": true,
-     "blurb": "An interactive murder-mystery show where child audiences become trainee detectives."
+     "featured": false,
+     "blurb": ""
     }
    ]
   },
@@ -130,66 +500,6 @@
      "when": "Weekends and half term until 1 November, 11:00 and 15:00",
      "price": "£15.90 per person",
      "age": "3+",
-     "category": "weekend",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "West Norwood Picturehouse & Library",
-   "address": "1–7 Norwood High Street, Norwood",
-   "postcode": "SE27 9JU",
-   "lat": 51.432084,
-   "lng": -0.101906,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Lambeth Fringe: The Magic Sweet Jar",
-     "url": "https://lambethfringe.com/events/magic-sweet-norwood",
-     "when": "Saturday 10 October, 14:30",
-     "price": "Adults £8, under-18s £6",
-     "age": "6+",
-     "category": "weekend",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Design Museum",
-   "address": "224–238 Kensington High Street",
-   "postcode": "W8 6AG",
-   "lat": 51.499874,
-   "lng": -0.200163,
-   "approx": false,
-   "events": [
-    {
-     "title": "Es Devlin: Other Worlds",
-     "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
-     "when": "Until 4 April, 10:00–18:00 (until 17:00 Monday–Thursday)",
-     "price": "Adults £21, 6–15s £11, under-6s free",
-     "age": "",
-     "category": "ongoing",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "The Truman Brewery",
-   "address": "83 Brick Lane",
-   "postcode": "E1 6QL",
-   "lat": 51.520888,
-   "lng": -0.072197,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Other Art Fair",
-     "url": "https://www.theotherartfair.com/london",
-     "when": "Saturday 11:00–19:00, Sunday 11:00–18:00 (bookable slots within these hours)",
-     "price": "Adults £20, under-12s free",
-     "age": "Suitable for all",
      "category": "weekend",
      "featured": false,
      "blurb": ""
@@ -250,66 +560,6 @@
      "when": "Weekends and half term until 1 November, 11:00 and/or 13:00 and/or 14:00",
      "price": "£10 or £19 per person",
      "age": "3–8",
-     "category": "weekend",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Jacksons Lane Arts Centre",
-   "address": "269a Archway Road",
-   "postcode": "N6 5AA",
-   "lat": 51.57711,
-   "lng": -0.146368,
-   "approx": false,
-   "events": [
-    {
-     "title": "Mr Sleepybum’s Dream Machine",
-     "url": "https://www.jacksonslane.org.uk/events/mr-sleepybums-dream-machine/",
-     "when": "Sunday 11 October, 11:00 and 14:00",
-     "price": "£10–£20 per person",
-     "age": "3–8",
-     "category": "weekend",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Woolwich Works",
-   "address": "The Fireworks Factory, 11 No. 1 Street",
-   "postcode": "SE18 6HD",
-   "lat": 51.494451,
-   "lng": 0.069095,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Museum of Marvellous Things",
-     "url": "https://www.woolwich.works/events/the-museum-of-marvellous-things",
-     "when": "Sunday 11 October, 11:00 and 14:00",
-     "price": "£17 per person",
-     "age": "3–10 (stated on other websites)",
-     "category": "weekend",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Half Moon Young People’s Theatre",
-   "address": "43 White Horse Road",
-   "postcode": "E1 0ND",
-   "lat": 51.513692,
-   "lng": -0.04062,
-   "approx": false,
-   "events": [
-    {
-     "title": "Rabbit and Rey and the Lost Things",
-     "url": "https://www.halfmoon.org.uk/events/rabbit-and-rey-and-the-lost-things",
-     "when": "Saturday 10 October, 11:00 and 14:00",
-     "price": "£9 per person",
-     "age": "3+",
      "category": "weekend",
      "featured": false,
      "blurb": ""
@@ -427,26 +677,6 @@
    ]
   },
   {
-   "name": "Royal Academy",
-   "address": "Burlington House, Piccadilly",
-   "postcode": "W1J 0BD",
-   "lat": 51.509099,
-   "lng": -0.139576,
-   "approx": false,
-   "events": [
-    {
-     "title": "Painting the French Riviera",
-     "url": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
-     "when": "Tuesday–Sunday until 31 January, 10:00–18:00 (Friday and Saturday until 21:00)",
-     "price": "Adults £26, under-16s free",
-     "age": "",
-     "category": "ongoing",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
    "name": "British Museum",
    "address": "Great Russell Street",
    "postcode": "WC1B 3DG",
@@ -507,26 +737,6 @@
    ]
   },
   {
-   "name": "Frameless",
-   "address": "6 Marble Arch",
-   "postcode": "W1H 7AP",
-   "lat": 51.51769878002892,
-   "lng": -0.16121160057887107,
-   "approx": true,
-   "events": [
-    {
-     "title": "Nikon Comedy Wildlife Awards",
-     "url": "https://frameless.com/artist-residencies/comedy-wildlife-awards/",
-     "when": "Until January 2027, Monday–Thursday 11:00–18:00, Friday 10:30–22:00, Saturday 10:00–22:00, Sunday 10:00–18:00",
-     "price": "Free with admission (adults £31.50, 3–15s £22, under-3s free during peak times)",
-     "age": "Suitable for all",
-     "category": "ongoing",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
    "name": "Little Angel Theatre",
    "address": "14 Dagmar Passage",
    "postcode": "N1 2DN",
@@ -568,8 +778,8 @@
   }
  ],
  "counts": {
-  "weekend": 9,
-  "ongoing": 20,
-  "later": 0
+  "weekend": 15,
+  "ongoing": 24,
+  "later": 1
  }
 }
