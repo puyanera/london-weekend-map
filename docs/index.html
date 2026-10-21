@@ -19,6 +19,8 @@
   --accent: #2747D6;
   --accent-ink: #FFFFFF;
   --ongoing: #6E7B76;
+  --pick: #D9480F;
+  --pick-ink: #FFFFFF;
   --font-body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
   color-scheme: light;
@@ -26,13 +28,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .96); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
-    --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
+    --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892; --pick: #FFA94D; --pick-ink: #1B1000;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0F1513; --surface: #171F1C; --glass: rgba(23, 31, 28, .96); --ink: #E8EEEB; --ink-soft: #9AA8A2; --line: #2A3531;
-  --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892;
+  --accent: #8EA6FF; --accent-ink: #0B1020; --ongoing: #8A9892; --pick: #FFA94D; --pick-ink: #1B1000;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -49,10 +51,13 @@ button:focus-visible, .mk:focus-visible { outline: 2px solid var(--accent); outl
 .mk .dot { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); border: 2px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,.45); font: 500 12px/1 var(--font-mono); }
 .mk.ongoing .dot { width: 18px; height: 18px; background: #fff; color: #5b6761; border: 2px solid #5b6761; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
 .mk.later .dot { width: 18px; height: 18px; background: #fff; color: #5b6761; border: 2px dashed #5b6761; box-shadow: none; }
+.mk.pick .dot { position: relative; width: 30px; height: 30px; background: var(--pick); color: var(--pick-ink); }
+.mk.pick:not(.sel) .dot::after { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--pick); opacity: .45; }
 .mk.approx .dot { outline: 2px dotted #4a5550; outline-offset: 2px; }
 .mk .tag { position: absolute; left: 50%; bottom: calc(100% + 7px); transform: translateX(-50%); white-space: nowrap; padding: 3px 8px; border-radius: 4px; background: #17201D; color: #fff; font: 500 12px var(--font-body); pointer-events: none; opacity: 0; }
 .mk:hover .tag, .mk:focus-visible .tag { opacity: 1; }
 .mk.sel .tag { display: none; }
+.mk.sel.pick .dot { box-shadow: 0 0 0 6px color-mix(in srgb, var(--pick) 40%, transparent), 0 1px 5px rgba(0,0,0,.4); }
 .mk.sel .dot { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 40%, transparent), 0 1px 5px rgba(0,0,0,.4); }
 .mk.sel.ongoing .dot, .mk.sel.later .dot { box-shadow: 0 0 0 6px rgba(91, 103, 97, .35), 0 1px 3px rgba(0,0,0,.3); }
 
@@ -65,6 +70,9 @@ h1 { margin: 0 0 10px; font-size: clamp(20px, 3vw, 28px); line-height: 1.1; font
 .chip[aria-pressed="false"] .key { opacity: .35; }
 .key { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
 .key.ongoing { background: transparent; border: 2px solid var(--ongoing); }
+.key.pick { background: var(--pick); }
+.legend { display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border: 1px solid var(--pick); border-radius: 999px; color: var(--ink); font: 500 13px var(--font-body); }
+.legend b { font: 500 12px var(--font-mono); color: var(--ink-soft); }
 .key.later { background: transparent; border: 2px dashed var(--ongoing); }
 .chip b { font: 500 12px var(--font-mono); color: var(--ink-soft); }
 .hint { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
@@ -87,6 +95,7 @@ h1 { margin: 0 0 10px; font-size: clamp(20px, 3vw, 28px); line-height: 1.1; font
 .vpop .ev .t { margin: 0; font-weight: 500; }
 .leaflet-container .vpop .ev .t a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .vpop .ev .cat { font: 500 11px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--accent); }
+.vpop .ev .cat.pick { color: var(--pick); }
 .vpop .ev .cat.ongoing, .vpop .ev .cat.later { color: var(--ink-soft); }
 .vpop .ev p { color: var(--ink-soft); font-size: 13.5px; }
 .vpop .ev .when { font: 400 12.5px/1.4 var(--font-mono); color: var(--ink); }
@@ -148,6 +157,12 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
     $('filters').appendChild(b);
   });
 
+  var nPicks = D.venues.reduce(function (n, v) { return n + v.events.filter(function (e) { return e.featured; }).length; }, 0);
+  if (nPicks) {
+    var lg = el('span', 'legend'); lg.appendChild(el('span', 'key pick')); lg.appendChild(document.createTextNode("This week's picks")); lg.appendChild(el('b', '', String(nPicks)));
+    $('filters').appendChild(lg);
+  }
+
   /* markers */
   var markers = [];
   D.venues.forEach(function (v, i) {
@@ -166,7 +181,7 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
     root.appendChild(el('p', 'addr', v.address + ', ' + v.postcode + (v.approx ? ' (approximate position)' : '')));
     evs.forEach(function (e) {
       var d = el('div', 'ev');
-      d.appendChild(el('span', 'cat ' + e.category, LABEL[e.category]));
+      d.appendChild(e.featured ? el('span', 'cat pick', "This week's pick") : el('span', 'cat ' + e.category, LABEL[e.category]));
       var t = el('p', 't'); var u = safeUrl(e.url);
       if (u) { var a = el('a', '', e.title); a.href = u; a.target = '_blank'; a.rel = 'noopener'; t.appendChild(a); } else { t.textContent = e.title; }
       d.appendChild(t);
@@ -197,8 +212,9 @@ fetch('data.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw n
       any++;
       m.el.hidden = false;
       var cat = topCat(evs);
-      m.el.className = 'mk ' + cat + (v.approx ? ' approx' : '') + (selected === i ? ' sel' : '');
-      m.mk.setZIndexOffset(selected === i ? 1000 : cat === 'weekend' ? 200 : 0);
+      var pick = evs.some(function (e) { return e.featured; });
+      m.el.className = 'mk ' + cat + (pick ? ' pick' : '') + (v.approx ? ' approx' : '') + (selected === i ? ' sel' : '');
+      m.mk.setZIndexOffset(selected === i ? 1000 : pick ? 400 : cat === 'weekend' ? 200 : 0);
       m.dot.textContent = evs.length > 1 ? String(evs.length) : '';
       m.el.setAttribute('aria-label', v.name + ', ' + evs.length + (evs.length > 1 ? ' events' : ' event'));
     });
