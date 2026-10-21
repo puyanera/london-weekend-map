@@ -1,10 +1,13 @@
-"""Build the weekend map page from events.json.
+"""Build the weekend map page from events.json (and golden.json, if present).
 
 events.json is produced by Claude from the weekly Dads in London email
 (see EXTRACTION.md). This script does the deterministic part: geocode
 postcodes, group events by venue, and write docs/data.json. The page itself
 (docs/index.html) is static: a Leaflet map that loads live OpenStreetMap
 tiles and reads data.json in the browser, served by GitHub Pages.
+
+golden.json holds the latest Golden Ticket issue (events to book ahead) in the
+same shape; its events are tagged list=golden and get their own colour.
 
 Usage: python build_map.py [events.json] [docs/data.json]
 """
@@ -63,6 +66,11 @@ def main():
     dst = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / "docs" / "data.json"
     data = json.loads(src.read_text(encoding="utf-8"))
     events = data["events"]
+    golden_path = HERE / "golden.json"
+    golden = {}
+    if len(sys.argv) <= 1 and golden_path.exists():
+        golden = json.loads(golden_path.read_text(encoding="utf-8"))
+        events = events + [dict(e, list="golden") for e in golden["events"]]
 
     cache = load_cache()
     coords = geocode(sorted({e["postcode"] for e in events}), cache)
@@ -97,11 +105,14 @@ def main():
             "approx": not coords[e["postcode"]][2], "events": [],
         })
         v["events"].append({k: e.get(k, "") for k in
-                            ("title", "url", "when", "price", "age", "category", "featured", "blurb")})
+                            ("title", "url", "when", "price", "age", "category", "list", "featured", "blurb")})
     venue_list = list(venues.values())
 
-    counts = {c: sum(1 for e in events if e["category"] == c) for c in ("weekend", "ongoing", "later")}
+    counts = {c: sum(1 for e in events if e.get("list") != "golden" and e["category"] == c) for c in ("weekend", "ongoing", "later")}
+    counts["golden"] = sum(1 for e in events if e.get("list") == "golden")
     payload = {"source": data["source"], "venues": venue_list, "counts": counts}
+    if golden:
+        payload["golden_source"] = golden["source"]
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
 
