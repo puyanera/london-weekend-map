@@ -21,12 +21,14 @@ Read README.md and EXTRACTION.md first. Never edit docs/index.html. Only edit ev
 
 1. Search: `from:dadsinlondon@mail.beehiiv.com subject:"Golden Ticket #" in:anywhere newer_than:8d`. Ignore other Golden Ticket emails such as "Your Golden Ticket guides are ready". Take the newest. If there is none, outcome B = "no issue found" (this is normal on Wednesday morning, do not treat it as a problem).
 2. Read golden.json, look at source.issued and source.label. If the label matches the newest issue, outcome B = "already up to date".
+   - Clear stale issue: if there is no newer issue (outcome B would be "no issue found") and golden.json's source.issued is 7 or more days before today, set its `events` to `[]` (keep `source`) so last week's Golden Ticket never sits beside this week's weekend list. Outcome B = "cleared last week's issue". This counts as a change to golden.json (build, check and commit it; message "Clear Golden Ticket #N" where N is the old issue). The Wednesday run clears it, and the Thursday run adds the new issue when it arrives.
+   - Whenever golden.json is kept, also drop any event whose end date is already in the past, and treat that as a change too.
 3. Otherwise extract the events into golden.json (overwrite) following the Golden Ticket section of EXTRACTION.md.
 
 ## Build, check, push (once, covering both jobs)
 
 4. If neither job changed a file, skip to Notify. Otherwise run: `python -m pip install -q -r requirements.txt && python build_map.py` (no arguments). It reads events.json and golden.json, uses geocache.json, tries api.postcodes.io for new postcodes, and writes docs/data.json. If it prints "could not place: ...", follow the Geocoding and the fallback section of EXTRACTION.md (add approximate lat and lng to just those events, then run it again).
-5. Sanity-check before committing. Job A changed: at least 10 weekly events placed and at least 3 with category weekend. Job B changed: at least 3 golden events placed. At most 3 events in total unplaced after the fallback. If a check fails, do NOT commit or push, and report outcome "failed" with the numbers.
+5. Sanity-check before committing. Job A changed: at least 10 weekly events placed and at least 3 with category weekend. Job B changed with a new issue: at least 3 golden events placed (not required when the issue was only cleared). At most 3 events in total unplaced after the fallback. If a check fails, do NOT commit or push, and report outcome "failed" with the numbers.
 6. Commit only events.json, golden.json, docs/data.json and geocache.json (those that changed). Message: "Update map for <weekend_label>" for Job A, "Add Golden Ticket #N" for Job B, or both joined with " and ". Push directly to main: `git push origin HEAD:main`. If the push is rejected, report outcome "failed" with the exact error.
 
 ## Notify
@@ -37,6 +39,7 @@ Read README.md and EXTRACTION.md first. Never edit docs/index.html. Only edit ev
    - Job A already up to date: "London weekend map: already up to date for <weekend_label>."
    - Job A no newsletter: "London weekend map: no new newsletter found this morning."
    - Job B updated: "Golden Ticket #<N> added: <G> events to book ahead."
+   - Job B cleared: "Last week's Golden Ticket #<N> removed from the map."
    - Job B already up to date or no issue: add no line.
    - Failure of either job: "London weekend map FAILED: <one-line reason>. Nothing was changed."
    Then give your short report as your final message.
