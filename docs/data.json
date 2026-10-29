@@ -377,15 +377,26 @@
      "blurb": ""
     },
     {
-     "title": "Ballroom Boogie x Toasty Tots XL",
-     "url": "https://www.southbankcentre.co.uk/whats-on/ballroom-boogie-x-toasty-tots-xl/",
-     "when": "7 November 2026, 14:45",
-     "price": "FREE – no ticket required",
-     "age": "Suitable for all",
+     "title": "Afrique en Cirque",
+     "url": "https://www.southbankcentre.co.uk/whats-on/afrique-en-cirque/",
+     "when": "8 January 2027, 19:30",
+     "price": "£15.13–£61.50",
+     "age": "8+",
      "category": "later",
      "list": "golden",
      "featured": false,
-     "blurb": "A free family dance party for 5 to 11s and their grown-ups in the Clore Ballroom."
+     "blurb": "Acrobatic human pyramids and gravity-defying moves set to Afro-jazz, percussion and kora."
+    },
+    {
+     "title": "OAE TOTS: A Musical Adventure with Don Quixote",
+     "url": "https://www.southbankcentre.co.uk/whats-on/oae-tots-a-musical-adventure-with-don-quixote/",
+     "when": "17 January 2027, 10:30 and 12:00",
+     "price": "Adults £16, children £5",
+     "age": "2–5",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Little ones sit close to orchestral musicians for a Baroque Don Quixote adventure."
     }
    ]
   },
@@ -756,17 +767,6 @@
      "list": "",
      "featured": false,
      "blurb": ""
-    },
-    {
-     "title": "The Three Little Wolves",
-     "url": "https://www.tickettailor.com/events/artofthepuppetltd/2297415",
-     "when": "28 November 2026 to 7 February 2027, various dates and start times (see website)",
-     "price": "Adults £15, 2–16s £12",
-     "age": "4–10",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A glove puppet musical on a barge, 50 minutes with no interval."
     }
    ]
   },
@@ -1044,49 +1044,49 @@
    ]
   },
   {
-   "name": "Fulham Palace",
-   "address": "Bishop's Avenue",
-   "postcode": "SW6 6EA",
-   "lat": 51.470771,
-   "lng": -0.21588,
+   "name": "Dock X, Canada Water",
+   "address": "Surrey Quays Road",
+   "postcode": "SE16 2XU",
+   "lat": 51.496771,
+   "lng": -0.051028,
    "approx": false,
    "events": [
     {
-     "title": "Young Archaeologists' Club (YAC)",
-     "url": "https://fever.pxf.io/oNWZkO",
-     "when": "24 October 2026 to 13 March 2027, select dates only (24 Oct, 21 Nov, 16 Jan, 13 Feb, 13 Mar), all start at 10:30",
-     "price": "£16 per person",
-     "age": "8–16",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Hands-on archaeology sessions for 8 to 16s, including a trip to a Roman bathhouse."
-    }
-   ]
-  },
-  {
-   "name": "Kricket Canary Wharf",
-   "address": "Unit 6 Frobisher Passage, Canary Wharf Estate",
-   "postcode": "E14 5HA",
-   "lat": 51.505782,
-   "lng": -0.020468,
-   "approx": false,
-   "events": [
-    {
-     "title": "Diwali Mela at Kricket Canary Wharf",
-     "url": "https://kricketrestaurants.com/discovery-articles/diwali-mela/",
-     "when": "7 November 2026, 12:00–16:00",
-     "price": "Adults (13+) £30, 2–12s £15, 0–1s free",
+     "title": "Alice Immersive Wonderland",
+     "url": "https://fever.pxf.io/QYr6mx",
+     "when": "13 November 2026 to 21 March 2027, various timeslots throughout the day",
+     "price": "Adults £28, 4–15s £21, under-4s £1.50",
      "age": "Suitable for all",
      "category": "later",
      "list": "golden",
      "featured": false,
-     "blurb": "A Diwali family day with screen printing, carrom, henna and bottomless biryani."
+     "blurb": "A 120-minute immersive walk through ten Wonderland spaces, ending in a 360° projection finale."
     }
    ]
   },
   {
-   "name": "Half Moon Young People’s Theatre",
+   "name": "The Cockpit",
+   "address": "Gateforth Street",
+   "postcode": "NW8 8EH",
+   "lat": 51.524449,
+   "lng": -0.169267,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Shakespeare: Pyramus & Thisbe | Help Us Write A Play!",
+     "url": "https://www.thecockpit.org.uk/show/family_shakespeare_pyramus_thisbe_-_november",
+     "when": "21 November 2026, 14:00",
+     "price": "Pay what you can: £18, £15 or £13 per person; Westminster locals £10; buy 3 tickets, get the 4th free",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Kids help finish the Rude Mechanicals' play in an interactive Shakespeare show."
+    }
+   ]
+  },
+  {
+   "name": "Half Moon Young People's Theatre",
    "address": "43 White Horse Road",
    "postcode": "E1 0ND",
    "lat": 51.513692,
@@ -1094,110 +1094,36 @@
    "approx": false,
    "events": [
     {
-     "title": "Bones in the Desert",
-     "url": "https://www.halfmoon.org.uk/events/bones-in-the-desert/",
-     "when": "12 to 17 November 2026, various times (see website)",
+     "title": "All the Small Things",
+     "url": "https://www.halfmoon.org.uk/events/all-the-small-things/",
+     "when": "27 November 2026 (10:30 and 13:30) and 28 November 2026 (11:00 and 14:00)",
      "price": "£9 per person",
-     "age": "13+",
+     "age": "4+",
      "category": "later",
      "list": "golden",
      "featured": false,
-     "blurb": "A new play about a young refugee and a century-old story, with a Q&A afterwards."
-    },
-    {
-     "title": "A Tale of Us",
-     "url": "https://www.halfmoon.org.uk/events/a-tale-of-us/",
-     "when": "20 and 21 November 2026, Friday 10:30, 12:00 and 14:00, Saturday 11:00, 13:00 and 15:00",
-     "price": "£9 per person",
-     "age": "0–18 months",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A multi-sensory show for new parents and babies, followed by a stay and play."
+     "blurb": "A puppetry and song fairytale about a Story Collector and a lost traveller."
     }
    ]
   },
   {
-   "name": "National Theatre",
-   "address": "Upper Ground",
-   "postcode": "SE1 9PX",
-   "lat": 51.506866,
-   "lng": -0.11406,
+   "name": "Barbican Centre",
+   "address": "Silk Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
    "approx": false,
    "events": [
     {
-     "title": "The Jungle Book",
-     "url": "https://www.nationaltheatre.org.uk/productions/the-jungle-book/",
-     "when": "13 November 2026 to 6 February 2027, Monday–Saturday at 19:00, matinees on Wednesdays and Saturdays",
-     "price": "£25–£105 per person",
-     "age": "7+",
+     "title": "Marvellous Animations for 8–15 year-olds: London International Animation Festival",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/liaf-marvellous-animations-ages-8-15",
+     "when": "29 November 2026, 13:30",
+     "price": "Adults £5, under-15s £3",
+     "age": "8–15",
      "category": "later",
      "list": "golden",
      "featured": false,
-     "blurb": "A new Olivier stage adaptation with inventive puppetry, set in the Sundarbans."
-    }
-   ]
-  },
-  {
-   "name": "Shakespeare’s Globe",
-   "address": "21 New Globe Walk",
-   "postcode": "SE1 9DT",
-   "lat": 51.508112,
-   "lng": -0.096572,
-   "approx": false,
-   "events": [
-    {
-     "title": "Pinocchio",
-     "url": "https://www.shakespearesglobe.com/whats-on/pinocchio",
-     "when": "28 November 2026 to 3 January 2027, various times (see website)",
-     "price": "£5–£89",
-     "age": "5+ (no under-3s admitted)",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A musical retelling of Pinocchio with live music, returning to the Globe."
-    }
-   ]
-  },
-  {
-   "name": "Charles Dickens Museum",
-   "address": "48–49 Doughty Street",
-   "postcode": "WC1N 2LX",
-   "lat": 51.523601,
-   "lng": -0.116237,
-   "approx": false,
-   "events": [
-    {
-     "title": "A Christmas Carol performed by James Swanton",
-     "url": "https://dickensmuseum.com/blogs/all-events/a-christmas-carol-live",
-     "when": "1 to 23 December 2026, 16:00 and/or 18:00",
-     "price": "£29 per person (includes same-day museum entry before the show)",
-     "age": "8+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A one-man Christmas Carol inside Dickens’s only surviving London home."
-    }
-   ]
-  },
-  {
-   "name": "Walthamstow Wetlands",
-   "address": "Engine House Visitor Centre, 2 Forest Road",
-   "postcode": "N17 9NH",
-   "lat": 51.586453,
-   "lng": -0.052563,
-   "approx": false,
-   "events": [
-    {
-     "title": "Winter at the Wetlands",
-     "url": "https://www.wildlondon.org.uk/events/2026-12-05-winter-wetlands",
-     "when": "5 to 23 December 2026, 45-minute sessions between 09:45 and 15:30",
-     "price": "Adults and child bundle £36, additional child £20.70, additional adult £18",
-     "age": "1+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A Christmas show with Santa and a gift for every child, in a nature reserve."
+     "blurb": "Animated shorts from around the world about friendship, resilience and self-discovery."
     }
    ]
   }
@@ -1206,12 +1132,12 @@
   "weekend": 29,
   "ongoing": 26,
   "later": 0,
-  "golden": 10
+  "golden": 6
  },
  "golden_source": {
-  "subject": "The Golden Ticket #87: Events to book right now",
-  "issued": "2026-10-21",
-  "label": "Golden Ticket #87",
-  "url": "https://www.dadsinlondon.com/p/golden-ticket-87"
+  "subject": "The Golden Ticket #88: Events to book right now",
+  "issued": "2026-10-28",
+  "label": "Golden Ticket #88",
+  "url": "https://www.dadsinlondon.com/p/golden-ticket-88"
  }
 }
