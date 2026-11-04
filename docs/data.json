@@ -1,369 +1,113 @@
 {
  "source": {
-  "subject": "65(!) things to do in London this weekend with the kids (31 October–1 November)",
-  "issued": "2026-10-28",
-  "weekend_label": "31 October–1 November",
-  "url": "https://www.dadsinlondon.com/p/65-things-to-do-in-london-this-weekend-with-the-kids-31-october-1-november"
+  "subject": "42 things to do in London this weekend with the kids (7–8 November)",
+  "issued": "2026-11-04",
+  "weekend_label": "7–8 November",
+  "url": "https://www.dadsinlondon.com/p/42-things-to-do-in-london-this-weekend-with-the-kids-7-8-november"
  },
  "venues": [
   {
-   "name": "Lightroom",
-   "address": "12 Lewis Cubitt Square",
-   "postcode": "N1C 4DY",
-   "lat": 51.537235,
-   "lng": -0.126431,
+   "name": "Monopoly Lifesized",
+   "address": "213–215 Tottenham Court Road",
+   "postcode": "W1T 7PS",
+   "lat": 51.520061,
+   "lng": -0.133335,
    "approx": false,
    "events": [
     {
-     "title": "Larger Than Life: Starring Wallace & Gromit, Shaun and More",
-     "url": "https://lightroom.uk/whats-on/larger-than-life/",
-     "when": "Daily until 4 January, entry timeslots throughout the day",
-     "price": "Adults £25, 3–18s £15 (families of 3+ get 15% off at checkout on selected timeslots)",
-     "age": "Age guidance: Younger children need to be supervised in the space",
-     "category": "ongoing",
-     "list": "",
-     "featured": true,
-     "blurb": "Aardman's characters fill four 11-metre walls in a relaxed, sit-down 50-minute projection show."
-    }
-   ]
-  },
-  {
-   "name": "The Wallace Collection",
-   "address": "Hertford House, Manchester Square",
-   "postcode": "W1U 3BN",
-   "lat": 51.517314,
-   "lng": -0.152949,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Big Draw: Drawn Together at the Wallace Collection",
-     "url": "https://www.thebigdraw.org/events/the-big-draw-drawn-together-at-the-wallace-collection",
-     "when": "Saturday 31 October, 11:00–16:00",
-     "price": "FREE – first come, first served",
-     "age": "Age guidance: 5+",
+     "title": "Mini Genius Lab",
+     "url": "https://fever.pxf.io/yZA1QN",
+     "when": "Various dates and timeslots until 3 January (including this weekend at 11:00, 13:30 and 16:00 on Saturday and Sunday)",
+     "price": "Adults (11+) £24.15, 3–10s £30.45, family pack (3 or more people) £24.15 per person",
+     "age": "3–12",
      "category": "weekend",
      "list": "",
      "featured": true,
-     "blurb": "Kids add drawings to a giant shared landscape canvas with artist Grace Holliday."
+     "blurb": "A slick one-hour hands-on science workshop with bouncing bubbles, balloon rockets and slime."
     }
    ]
   },
   {
-   "name": "Tate Britain",
-   "address": "Millbank",
-   "postcode": "SW1P 4RG",
-   "lat": 51.490871,
-   "lng": -0.127181,
+   "name": "Woolwich Works",
+   "address": "The Fireworks Factory, 11 No. 1 Street",
+   "postcode": "SE18 6HD",
+   "lat": 51.494451,
+   "lng": 0.069095,
    "approx": false,
    "events": [
     {
-     "title": "The 90s: Art and Fashion",
-     "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
-     "when": "Daily until 14 February, 10:00–18:00",
-     "price": "Adults £22, 12–18s £5, under-12s free",
-     "age": "Age guidance: see write-up (some nudity and adult themes)",
-     "category": "ongoing",
-     "list": "",
-     "featured": true,
-     "blurb": "A weird, divisive Cool Britannia show with some adult art; the kids loved it."
-    }
-   ]
-  },
-  {
-   "name": "Dugdale Arts Centre",
-   "address": "39 London Road",
-   "postcode": "EN2 6DS",
-   "lat": 51.649837,
-   "lng": -0.080695,
-   "approx": false,
-   "events": [
-    {
-     "title": "Children's activities at Dugdale Arts Centre",
-     "url": "https://www.dugdaleartscentre.co.uk/whats-on/fun-halloween-ghost-art-workshop",
-     "when": "Saturday 31 October: Rubik's Cube 10:30; juggling and plate spinning 11:30; Trick & Treat Circus Live 11:30; Halloween Ghost Art Workshop 13:30",
-     "price": "Rubik's Cube and juggling £6.50 per person; circus adults £15, children £13.50; ghost art adults £9.50, children free",
-     "age": "Age guidance: Rubik's Cube and juggling 7+; circus and ghost art suitable for all ages",
+     "title": "Mr Sleepybum's Dream Machine",
+     "url": "https://www.woolwich.works/events/mr-sleepybums-dream-machine",
+     "when": "Sunday 8 November, 11:00 and 14:00",
+     "price": "£13.50 per person",
+     "age": "3–8",
      "category": "weekend",
      "list": "",
      "featured": true,
-     "blurb": "Enfield's arts centre offers Halloween circus, ghost art and Rubik's Cube sessions."
+     "blurb": "An award-winning kids' show about a man who can't dream and the machine he builds to fix it."
     }
    ]
   },
   {
-   "name": "Guildhall Art Gallery",
-   "address": "Guildhall Yard",
-   "postcode": "EC2V 5AE",
-   "lat": 51.515276,
-   "lng": -0.091906,
+   "name": "artsdepot",
+   "address": "5 Nether Street, Tally Ho Corner",
+   "postcode": "N12 0GA",
+   "lat": 51.612818,
+   "lng": -0.176705,
    "approx": false,
    "events": [
     {
-     "title": "Beyond Bayeux: Tapestry Now Exhibition",
-     "url": "https://onecitylondon.com/event/beyond-bayeux-tapestry-now-exhibition/",
-     "when": "Daily until 21 March, timeslots between 10:00 and 16:30",
-     "price": "Pay what you can (including “free”) – booking required",
-     "age": "Age guidance: suitable for all",
+     "title": "The Wind in the Willows",
+     "url": "https://www.artsdepot.co.uk/event/the-wind-in-the-willows/",
+     "when": "Sunday 8 November, 10:30 and 13:30",
+     "price": "£13.75 per person",
+     "age": "5+",
+     "category": "weekend",
+     "list": "",
+     "featured": true,
+     "blurb": "Box Tale Soup's hand-made puppets and live music bring Mole, Ratty and a five-foot Toad to life."
+    }
+   ]
+  },
+  {
+   "name": "National Portrait Gallery",
+   "address": "St Martin's Place",
+   "postcode": "WC2H 0HE",
+   "lat": 51.509399,
+   "lng": -0.128453,
+   "approx": false,
+   "events": [
+    {
+     "title": "Winston Taylor Photo Portrait Prize 2026",
+     "url": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026",
+     "when": "Daily until 17 January, 10:30–18:00 (until 21:00 on Friday and Saturday)",
+     "price": "Adults £12, 12–18s £5, under-12s free",
+     "age": "",
      "category": "ongoing",
      "list": "",
      "featured": true,
-     "blurb": "Over 20 Dovecot Studios tapestries, including Hockney designs, for whatever you choose to pay."
-    }
-   ]
-  },
-  {
-   "name": "Park Theatre",
-   "address": "Clifton Terrace",
-   "postcode": "N4 3JP",
-   "lat": 51.565668,
-   "lng": -0.10841,
-   "approx": false,
-   "events": [
-    {
-     "title": "Drag Tales",
-     "url": "https://parktheatre.co.uk/events/drag-tales",
-     "when": "Saturday 31 October, 14:00",
-     "price": "Adults £12.50, children £7.50, babes in arms free",
-     "age": "Age guidance: under-10s",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Polka Theatre",
-   "address": "240 The Broadway",
-   "postcode": "SW19 1SB",
-   "lat": 51.419706,
-   "lng": -0.194497,
-   "approx": false,
-   "events": [
-    {
-     "title": "At Sea",
-     "url": "https://polkatheatre.com/event/at-sea/",
-     "when": "Until 1 November, 11:30 and 14:30",
-     "price": "£15 per person, plus £2.50 booking fee per order",
-     "age": "Age guidance: 6–12",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Toto",
-     "url": "https://polkatheatre.com/event/toto/",
-     "when": "Until 1 November, 11:00 and/or 13:00 and/or 14:00",
-     "price": "£10 or £19 per person",
-     "age": "Age guidance: 3–8",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Design Museum",
-   "address": "224–238 Kensington High Street",
-   "postcode": "W8 6AG",
-   "lat": 51.499874,
-   "lng": -0.200163,
-   "approx": false,
-   "events": [
-    {
-     "title": "Halloween Family Drop-in",
-     "url": "https://designmuseum.org/whats-on/events/halloween-family-drop-in",
-     "when": "Saturday 31 October, 15:30–19:00",
-     "price": "FREE – no booking required",
-     "age": "Age guidance: 5–11",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "LAIKA presents Wildwood: The Exhibition",
-     "url": "https://designmuseum.org/exhibitions/laika-presents-wildwood-the-exhibition",
-     "when": "Until 10 January, 10:00–17:00 Monday–Thursday and 10:00–18:00 Friday–Sunday",
-     "price": "Adults £17.09, 6–15s £8.55, under-6s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Es Devlin: Other Worlds",
-     "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
-     "when": "Until 4 April, 10:00–18:00 (until 17:00 Monday–Thursday)",
-     "price": "Adults £21, 6–15s £11, under-6s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "British Museum",
-   "address": "Great Russell Street",
-   "postcode": "WC1B 3DG",
-   "lat": 51.519364,
-   "lng": -0.126848,
-   "approx": false,
-   "events": [
-    {
-     "title": "Treasure Hunt at the British Museum",
-     "url": "https://www.culturequesthunt.com/event-details/treasure-hunt-at-the-british-museum-5",
-     "when": "Saturday 31 October, 14:00–17:00 (other dates available)",
-     "price": "Adults £15, 7–16s £8",
-     "age": "Age guidance: 7+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Korea",
-     "url": "https://www.britishmuseum.org/exhibitions/korea",
-     "when": "Daily until 31 January, 10:00–17:00 (Fridays until 20:30)",
-     "price": "Adults £20, under-16s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Leicester Square Theatre",
-   "address": "6 Leicester Place",
-   "postcode": "WC2H 7BX",
-   "lat": 51.51134,
-   "lng": -0.130074,
-   "approx": false,
-   "events": [
-    {
-     "title": "Taskmaster for Kids",
-     "url": "https://www.leicestersquaretheatre.com/show/taskmaster-for-kids",
-     "when": "Friday 30 October, 13:30 and 16:00; Saturday 31 October, 11:00 and 14:00",
-     "price": "From £21.85 per person (including fees)",
-     "age": "Age guidance: 5+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Kay's Gruesome Games with Adam Kay and Henry Paker",
-     "url": "https://www.leicestersquaretheatre.com/show/kays-gruesome-games-with-adam-kay-and-henry-paker",
-     "when": "Sunday 1 November, various performance times (see website)",
-     "price": "£26.45 per person (including booking fee)",
-     "age": "Age guidance: 7+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Royal Albert Hall",
-   "address": "Kensington Gore",
-   "postcode": "SW7 2AP",
-   "lat": 51.501269,
-   "lng": -0.177516,
-   "approx": false,
-   "events": [
-    {
-     "title": "Maestro of the Movies: A Tribute to John Williams",
-     "url": "https://www.royalalberthall.com/tickets/events/2026/maestro-of-the-movies-john-williams",
-     "when": "Saturday 31 October, 14:30 and 19:30",
-     "price": "£30–£125.50 per person",
-     "age": "Age guidance: 5+ (under-15s must be accompanied by an adult)",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Dulwich Picture Gallery",
-   "address": "Gallery Road",
-   "postcode": "SE21 7AD",
-   "lat": 51.445613,
-   "lng": -0.08668,
-   "approx": false,
-   "events": [
-    {
-     "title": "Wild Life Drawing: Owls",
-     "url": "https://www.dulwichpicturegallery.org.uk/whats-on/wild-life-drawing-owls/",
-     "when": "Saturday 31 October, 11:00–13:00 and 14:00–16:00",
-     "price": "£60 for one adult and one child, additional children £30",
-     "age": "",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Hokusai: Thirty-six Views of Mount Fuji from the Iuchi Collection",
-     "url": "https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-thirty-six-views-of-mt-fuji-from-the-iuchi-collection/",
-     "when": "Tuesday–Sunday until 17 January, 10:00–17:00",
-     "price": "Adults £19, under-18s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
+     "blurb": "Pick your own favourite among 56 portraits before finding out who won the £15,000 prize."
     }
    ]
   },
   {
    "name": "Southbank Centre",
-   "address": "Queen Elizabeth Hall, Belvedere Road",
+   "address": "Belvedere Road",
    "postcode": "SE1 8XX",
    "lat": 51.505768,
    "lng": -0.1168,
    "approx": false,
    "events": [
     {
-     "title": "The Smeds and the Smoos",
-     "url": "https://www.southbankcentre.co.uk/whats-on/the-smeds-and-the-smoos",
-     "when": "Until 1 November, various performance times (see website)",
-     "price": "From £22 per person",
-     "age": "Age guidance: 3+",
+     "title": "Saturday Sessions: Drawing Futures with MATT+FIONA",
+     "url": "https://www.southbankcentre.co.uk/whats-on/saturday-sessions-drawing-futures-with-mattfiona/",
+     "when": "Saturday 7 November, 13:30 (relaxed session at 11:00)",
+     "price": "FREE – no ticket required",
+     "age": "5–11",
      "category": "weekend",
      "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Search for a Story",
-     "url": "https://www.southbankcentre.co.uk/whats-on/search-for-a-story/",
-     "when": "Thursday 29 October–Sunday 1 November, 11:00–15:00 (Friday 13:00–17:00)",
-     "price": "FREE – no booking required",
-     "age": "Age guidance: 5+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "London Literature Festival Book Swap",
-     "url": "https://www.southbankcentre.co.uk/whats-on/london-literature-festival-book-swap",
-     "when": "Until 1 November, 10:00–20:00 (Sunday 1 November until 19:30; closed Monday and Tuesday)",
-     "price": "FREE – no booking required",
-     "age": "Suitable for all",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
+     "featured": true,
+     "blurb": "A free workshop where children imagine future buildings through games and collaborative 3D drawing."
     },
     {
      "title": "Koestler Arts: Rock, Paper, Scissors",
@@ -401,6 +145,90 @@
    ]
   },
   {
+   "name": "Half Moon Theatre",
+   "address": "43 White Horse Road",
+   "postcode": "E1 0ND",
+   "lat": 51.513692,
+   "lng": -0.04062,
+   "approx": false,
+   "events": [
+    {
+     "title": "Groove into the Woods",
+     "url": "https://www.halfmoon.org.uk/events/groove-into-the-woods/",
+     "when": "Saturday 7 November, 11:00 and 14:00",
+     "price": "£9 per person",
+     "age": "3–7",
+     "category": "weekend",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Barbican Cinema 2",
+   "address": "Beech Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Film Club: Coco",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-coco",
+     "when": "Saturday 7 November, 11:00",
+     "price": "Adults £5, under-18s £2.50, plus £1.50 transaction fee per booking (minimum booking of one adult and one child)",
+     "age": "6+ (PG)",
+     "category": "weekend",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Merton Arts Space",
+   "address": "Wimbledon Library, Wimbledon Hill Road",
+   "postcode": "SW19 7QA",
+   "lat": 51.423205,
+   "lng": -0.206844,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Concert: The Duck with No Luck",
+     "url": "https://wimbledonmusicfestival.co.uk/wimf2026-programme/family-concert-2/",
+     "when": "Sunday 8 November, 12:00–13:00 and 15:00–16:00",
+     "price": "Adults £15, children £10",
+     "age": "3+",
+     "category": "weekend",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Polka Theatre",
+   "address": "240 The Broadway",
+   "postcode": "SW19 1SB",
+   "lat": 51.419706,
+   "lng": -0.194497,
+   "approx": false,
+   "events": [
+    {
+     "title": "The Sleep Show",
+     "url": "https://polkatheatre.com/event/the-sleep-show/",
+     "when": "Until Sunday 8 November, 10:30 and/or 13:00",
+     "price": "£14 per person, under-12-months £1, plus £2.50 booking fee per order",
+     "age": "3–6",
+     "category": "weekend",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
    "name": "Jacksons Lane",
    "address": "269a Archway Road",
    "postcode": "N6 5AA",
@@ -409,11 +237,11 @@
    "approx": false,
    "events": [
     {
-     "title": "Super Spooky Circus Cabaret for Kids",
-     "url": "https://www.jacksonslane.org.uk/events/super-spooky-cabaret-for-kids/",
-     "when": "Until 1 November, 11:00, 14:00 and/or 17:00 (see website)",
-     "price": "£10–£22.50 per person",
-     "age": "Age guidance: 4+",
+     "title": "Grow: Highly Sprung",
+     "url": "https://www.jacksonslane.org.uk/events/grow-highly-sprung/",
+     "when": "Sunday 8 November, 11:00 and 14:00",
+     "price": "£12.50 per person",
+     "age": "3–7",
      "category": "weekend",
      "list": "",
      "featured": false,
@@ -422,199 +250,18 @@
    ]
   },
   {
-   "name": "Horniman Museum and Gardens",
-   "address": "100 London Road",
-   "postcode": "SE23 3PQ",
-   "lat": 51.441131,
-   "lng": -0.060737,
+   "name": "British Library",
+   "address": "96 Euston Road",
+   "postcode": "NW1 2DB",
+   "lat": 51.529987,
+   "lng": -0.126989,
    "approx": false,
    "events": [
     {
-     "title": "Day of the Dead Family Festival",
-     "url": "https://www.horniman.ac.uk/event/day-of-the-dead-family-festival/",
-     "when": "Saturday 31 October, 11:00–16:00",
-     "price": "Adults £8, under-16s £6, under-2s free – currently sold out",
-     "age": "Suitable for all",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Little Angel Studios",
-   "address": "Sebbon Street",
-   "postcode": "N1 2EH",
-   "lat": 51.54125,
-   "lng": -0.100409,
-   "approx": false,
-   "events": [
-    {
-     "title": "Family Workshops: Halloween",
-     "url": "https://www.littleangeltheatre.com/whats-on/family-workshops-halloween",
-     "when": "Saturday 31 October, 10:30 and 12:15",
-     "price": "£10 per person",
-     "age": "Age guidance: 5–9",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "The Pied Piper: A Rat's Tale",
-     "url": "https://www.littleangeltheatre.com/whats-on/the-pied-piper-a-rats-tale",
-     "when": "Until 7 November, various start times – see website",
-     "price": "Adults £16, 1–17s £14",
-     "age": "Age guidance: 5+",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "The Albany",
-   "address": "Douglas Way",
-   "postcode": "SE8 4AG",
-   "lat": 51.477877,
-   "lng": -0.027409,
-   "approx": false,
-   "events": [
-    {
-     "title": "Disco Kids: Halloween Special",
-     "url": "https://www.thealbany.org.uk/events/disco-kids-halloween",
-     "when": "Saturday 31 October, 14:00–17:00",
-     "price": "£12 per person (four tickets for £40)",
-     "age": "Age guidance: 3–8",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Gunnersbury Park & Museum",
-   "address": "Popes Lane",
-   "postcode": "W5 4NH",
-   "lat": 51.501391,
-   "lng": -0.292648,
-   "approx": false,
-   "events": [
-    {
-     "title": "Creepy Creatures Nature Trail",
-     "url": "https://www.visitgunnersbury.org/events/creepy-creatures-nature-trail",
-     "when": "Until 1 November, 10:00–16:00",
-     "price": "£2 per trail – no booking required",
-     "age": "Age guidance: 3+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Spooky Slime Make & Take",
-     "url": "https://www.visitgunnersbury.org/events/spooky-slime-make-take",
-     "when": "Thursday 29 and Saturday 31 October, 10:30–11:15, 12:00–12:45, 14:00–14:45 and 15:15–16:00",
-     "price": "£8 per child",
-     "age": "Age guidance: 6+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Holborn Library",
-   "address": "32–38 Theobalds Road",
-   "postcode": "WC1X 8PA",
-   "lat": 51.521182,
-   "lng": -0.115703,
-   "approx": false,
-   "events": [
-    {
-     "title": "Halloween Face Painting at Holborn Library",
-     "url": "https://bloomsburyfestival.org.uk/whats-on/halloween-face-painting-at-holborn-library",
-     "when": "Saturday 31 October, 14:00–16:00",
-     "price": "FREE – booking required (walk-ins subject to availability)",
-     "age": "Age guidance: 5–12",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Big Penny Social",
-   "address": "1 Priestley Way",
-   "postcode": "E17 6AL",
-   "lat": 51.590109,
-   "lng": -0.041521,
-   "approx": false,
-   "events": [
-    {
-     "title": "Halloween Family Disco 2026",
-     "url": "https://dice.fm/bundles/halloween-family-disco-2026-m8yw",
-     "when": "Saturday 31 October and Sunday 1 November, 13:00–14:30 and 15:30–17:00",
-     "price": "£7 per person (tickets required for ages 3+)",
-     "age": "Suitable for all",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Barbican",
-   "address": "Cinema 2, Beech Street",
-   "postcode": "EC2Y 8DS",
-   "lat": 51.519961,
-   "lng": -0.094103,
-   "approx": false,
-   "events": [
-    {
-     "title": "Relaxed Screening: Minions and Monsters + Pre-film Drawing Demo",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-week-relaxed-minions-and-monsters-drawing",
-     "when": "Saturday 31 October, 11:00",
-     "price": "Adults £5, under-18s £2.50, plus £1.50 transaction fee per booking",
-     "age": "Suitable for all (U)",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Singin' in the Rain + Introduction from Curator Susie Evans",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-week-singin-in-the-rain-introduction",
-     "when": "Saturday 31 October, 13:45",
-     "price": "Adults £5, under-18s £2.50, plus £1.50 transaction fee per booking",
-     "age": "Age guidance: 6+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Hamlet: Hail to the Thief",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/hamlet-hail-to-the-thief",
-     "when": "Until Saturday 23 January, various performance times (see website)",
-     "price": "From £34 per person (including transaction fee)",
-     "age": "Age guidance: 14+",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Robert Ryman: The Real Thing",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing",
-     "when": "Tuesday–Sunday until 28 February, 10:00–17:00 (until 19:00 on Thursdays and Fridays)",
-     "price": "Adults £20.50, under-16s free",
+     "title": "Agatha Christie: A World of Mystery",
+     "url": "https://events.bl.uk/exhibitions/agathachristie",
+     "when": "Daily until 20 June, various opening times (see website)",
+     "price": "Adults £25, under-16s £6",
      "age": "",
      "category": "ongoing",
      "list": "",
@@ -624,20 +271,41 @@
    ]
   },
   {
-   "name": "Tower of London",
-   "address": "Tower Hill",
-   "postcode": "EC3N 4AB",
-   "lat": 51.508275,
-   "lng": -0.076246,
+   "name": "Lightroom",
+   "address": "12 Lewis Cubitt Square",
+   "postcode": "N1C 4DY",
+   "lat": 51.537235,
+   "lng": -0.126431,
    "approx": false,
    "events": [
     {
-     "title": "Halloween at the Tower of London",
-     "url": "https://www.hrp.org.uk/tower-of-london/whats-on/halloween-at-the-tower-of-london/",
-     "when": "Until 1 November, 10:30–16:00",
-     "price": "Free with general admission (adults £38, 5–17s £19, under-5s free)",
+     "title": "Larger Than Life: Starring Wallace & Gromit, Shaun and More",
+     "url": "https://lightroom.uk/whats-on/larger-than-life/",
+     "when": "Daily until 4 January, entry timeslots throughout the day",
+     "price": "Adults £25, 3–18s £15 (families of 3+ get 15% off at checkout on selected timeslots)",
+     "age": "Younger children need to be supervised in the space",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Guildhall Art Gallery",
+   "address": "Guildhall Yard",
+   "postcode": "EC2V 5AE",
+   "lat": 51.515276,
+   "lng": -0.091906,
+   "approx": false,
+   "events": [
+    {
+     "title": "Beyond Bayeux: Tapestry Now Exhibition",
+     "url": "https://onecitylondon.com/event/beyond-bayeux-tapestry-now-exhibition/",
+     "when": "Daily until 21 March, timeslots between 10:00 and 16:30",
+     "price": "Pay what you can (including “free”) – booking required",
      "age": "Suitable for all",
-     "category": "weekend",
+     "category": "ongoing",
      "list": "",
      "featured": false,
      "blurb": ""
@@ -645,83 +313,20 @@
    ]
   },
   {
-   "name": "Claremont Park, Brent Cross Town",
-   "address": "Claremont Road",
-   "postcode": "NW2 1AJ",
-   "lat": 51.57152,
-   "lng": -0.219759,
+   "name": "Tate Britain",
+   "address": "Millbank",
+   "postcode": "SW1P 4RG",
+   "lat": 51.490871,
+   "lng": -0.127181,
    "approx": false,
    "events": [
     {
-     "title": "Halloween Trail",
-     "url": "https://brentcrosstown.co.uk/event/halloween-trail",
-     "when": "Until 1 November, 10:00–18:00",
-     "price": "FREE – no booking required",
+     "title": "The 90s: Art and Fashion",
+     "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
+     "when": "Daily until 14 February, 10:00–18:00",
+     "price": "Adults £22, 12–18s £5, under-12s free",
      "age": "",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Hampton Court Palace",
-   "address": "East Molesey, Surrey",
-   "postcode": "KT8 9AU",
-   "lat": 51.403812,
-   "lng": -0.337649,
-   "approx": false,
-   "events": [
-    {
-     "title": "Halloween at Hampton Court Palace",
-     "url": "https://www.hrp.org.uk/hampton-court-palace/whats-on/halloween-at-hampton-court-palace/",
-     "when": "Until 1 November (see website for opening times)",
-     "price": "Free with general admission (adults £30–£33, 5–17s £15–£16.50, under-5s free)",
-     "age": "",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Garrick Theatre",
-   "address": "2 Charing Cross Road",
-   "postcode": "WC2H 0HH",
-   "lat": 51.509946,
-   "lng": -0.127782,
-   "approx": false,
-   "events": [
-    {
-     "title": "Cirque Berserk!",
-     "url": "https://nimaxtheatres.com/shows/cirque-berserk/",
-     "when": "Until 31 October, various performance times (see website)",
-     "price": "Adults from £25, under-15s from £17.50",
-     "age": "Age guidance: 5+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "The Well Walk Theatre",
-   "address": "49 Willow Road",
-   "postcode": "NW3 1TS",
-   "lat": 51.557575,
-   "lng": -0.174269,
-   "approx": false,
-   "events": [
-    {
-     "title": "Petit Pierre From Transylvania",
-     "url": "https://shop.beyonk.com/2wopiy2m/experiences/gpwcwrz8?group=experiences",
-     "when": "Until 1 November, 11:00 and 15:00",
-     "price": "£15.90 per person",
-     "age": "Age guidance: 3+",
-     "category": "weekend",
+     "category": "ongoing",
      "list": "",
      "featured": false,
      "blurb": ""
@@ -762,7 +367,7 @@
      "url": "https://www.tickettailor.com/events/artofthepuppetltd/2297412",
      "when": "Various dates until 15 November, various performance times (see website)",
      "price": "Adults £15, 2–16s £12, under-2s free",
-     "age": "Age guidance: 3–7",
+     "age": "3–7",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -804,6 +409,48 @@
      "url": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
      "when": "Daily until 17 January, 10:00–17:45 (until 22:00 on Fridays)",
      "price": "FREE – no booking required",
+     "age": "",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Barbican Theatre",
+   "address": "Silk Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Hamlet: Hail to the Thief",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/hamlet-hail-to-the-thief",
+     "when": "Until Saturday 23 January, various performance times (see website)",
+     "price": "From £34 per person (including transaction fee)",
+     "age": "14+",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Dulwich Picture Gallery",
+   "address": "Gallery Road",
+   "postcode": "SE21 7AD",
+   "lat": 51.445613,
+   "lng": -0.08668,
+   "approx": false,
+   "events": [
+    {
+     "title": "Hokusai: Thirty-six Views of Mount Fuji from the Iuchi Collection",
+     "url": "https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-thirty-six-views-of-mt-fuji-from-the-iuchi-collection/",
+     "when": "Tuesday–Sunday until 17 January, 10:00–17:00",
+     "price": "Adults £19, under-18s free",
      "age": "",
      "category": "ongoing",
      "list": "",
@@ -908,8 +555,40 @@
      "title": "High School Musical",
      "url": "https://www.kxtickets.com/whats-on/high-school-musical",
      "when": "Until 3 January, various performance times",
-     "price": "£35–£199 (!) per person",
-     "age": "Age guidance: 6+; under-3s not admitted",
+     "price": "£35–£199 per person",
+     "age": "6+; under-3s not admitted",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Design Museum",
+   "address": "224–238 Kensington High Street",
+   "postcode": "W8 6AG",
+   "lat": 51.499874,
+   "lng": -0.200163,
+   "approx": false,
+   "events": [
+    {
+     "title": "LAIKA presents Wildwood: The Exhibition",
+     "url": "https://designmuseum.org/exhibitions/laika-presents-wildwood-the-exhibition",
+     "when": "Until 10 January, 10:00–17:00 Monday–Thursday and 10:00–18:00 Friday–Sunday",
+     "price": "Adults £17.09, 6–15s £8.55, under-6s free",
+     "age": "",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    },
+    {
+     "title": "Es Devlin: Other Worlds",
+     "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
+     "when": "Until 4 April, 10:00–18:00 (until 17:00 Monday–Thursday)",
+     "price": "Adults £21, 6–15s £11, under-6s free",
+     "age": "",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -939,6 +618,38 @@
    ]
   },
   {
+   "name": "Barbican Centre",
+   "address": "Silk Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Robert Ryman: The Real Thing",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing",
+     "when": "Tuesday–Sunday until 28 February, 10:00–17:00 (until 19:00 on Thursdays and Fridays)",
+     "price": "Adults £20.50, under-16s free",
+     "age": "",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    },
+    {
+     "title": "Marvellous Animations for 8–15 year-olds: London International Animation Festival",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/liaf-marvellous-animations-ages-8-15",
+     "when": "29 November 2026, 13:30",
+     "price": "Adults £5, under-15s £3",
+     "age": "8–15",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Animated shorts from around the world about friendship, resilience and self-discovery."
+    }
+   ]
+  },
+  {
    "name": "Somerset House",
    "address": "Strand",
    "postcode": "WC2R 1LA",
@@ -951,7 +662,7 @@
      "url": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure",
      "when": "Tuesday–Sunday until 29 November, various timeslots each day",
      "price": "FREE – booking required",
-     "age": "Age guidance: 13+",
+     "age": "13+",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -972,7 +683,28 @@
      "url": "https://fever.pxf.io/dyJAQQ",
      "when": "Wednesday–Sunday (and daily during half term) until 31 December, 10:00 or 11:00–19:00",
      "price": "Adults £27.50, 8–17s £21.50 (family bundles and London resident pricing also available)",
-     "age": "Age guidance: children must be 8+",
+     "age": "8+",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "British Museum",
+   "address": "Great Russell Street",
+   "postcode": "WC1B 3DG",
+   "lat": 51.519364,
+   "lng": -0.126848,
+   "approx": false,
+   "events": [
+    {
+     "title": "Korea",
+     "url": "https://www.britishmuseum.org/exhibitions/korea",
+     "when": "Daily until 31 January, 10:00–17:00 (Fridays until 20:30)",
+     "price": "Adults £20, under-16s free",
+     "age": "",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -993,7 +725,7 @@
      "url": "https://fever.pxf.io/rEykNd",
      "when": "Until 21 March, various timeslots each day",
      "price": "Adults £24.61, 6–17s £16.05 (family bundles also available)",
-     "age": "Age guidance: suitable for all (some exhibits contain mature content, parental discretion advised)",
+     "age": "Suitable for all (some exhibits contain mature content)",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -1035,7 +767,7 @@
      "url": "https://www.littleangeltheatre.com/whats-on/pip-and-posy-live-on-stage",
      "when": "Until 22 November, various start times (see website)",
      "price": "Adults £16, 1–17s £14",
-     "age": "Age guidance: 2–5",
+     "age": "2–5",
      "category": "ongoing",
      "list": "",
      "featured": false,
@@ -1105,32 +837,11 @@
      "blurb": "A puppetry and song fairytale about a Story Collector and a lost traveller."
     }
    ]
-  },
-  {
-   "name": "Barbican Centre",
-   "address": "Silk Street",
-   "postcode": "EC2Y 8DS",
-   "lat": 51.519961,
-   "lng": -0.094103,
-   "approx": false,
-   "events": [
-    {
-     "title": "Marvellous Animations for 8–15 year-olds: London International Animation Festival",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/liaf-marvellous-animations-ages-8-15",
-     "when": "29 November 2026, 13:30",
-     "price": "Adults £5, under-15s £3",
-     "age": "8–15",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Animated shorts from around the world about friendship, resilience and self-discovery."
-    }
-   ]
   }
  ],
  "counts": {
-  "weekend": 29,
-  "ongoing": 26,
+  "weekend": 9,
+  "ongoing": 27,
   "later": 0,
   "golden": 6
  },
