@@ -879,18 +879,220 @@
      "blurb": ""
     }
    ]
+  },
+  {
+   "name": "Cutty Sark",
+   "address": "King William Walk",
+   "postcode": "SE10 9HT",
+   "lat": 51.483529,
+   "lng": -0.009594,
+   "approx": false,
+   "events": [
+    {
+     "title": "Cutty Sark Sea Shanty Festival 2026",
+     "url": "https://www.rmg.co.uk/whats-on/cutty-sark/sea-shanty-festival-2026",
+     "when": "21 November 2026, 10:00–18:00",
+     "price": "Free with Cutty Sark admission (adults £22, 4–15s £11, under-4s free)",
+     "age": "All ages",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A day of joyful maritime music marking the tea clipper's 157th birthday."
+    }
+   ]
+  },
+  {
+   "name": "The Well Walk Theatre",
+   "address": "49 Willow Road",
+   "postcode": "NW3 1TS",
+   "lat": 51.557575,
+   "lng": -0.174269,
+   "approx": false,
+   "events": [
+    {
+     "title": "Cartoon Christmas Loop",
+     "url": "https://shop.beyonk.com/2wopiy2m/experiences/ex_0scwco06ziabgoi9?group=experiences",
+     "when": "21 to 22 November 2026, 13:00–18:00",
+     "price": "£7.42 per person",
+     "age": "3+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Drop-in screenings of vintage Christmas cartoons on a relaxed continuous loop."
+    }
+   ]
+  },
+  {
+   "name": "Jacksons Lane Arts Centre",
+   "address": "269a Archway Road",
+   "postcode": "N6 5AA",
+   "lat": 51.57711,
+   "lng": -0.146368,
+   "approx": false,
+   "events": [
+    {
+     "title": "The Elf Factory",
+     "url": "https://www.jacksonslane.org.uk/events/the-elf-factory/",
+     "when": "1 to 6 December 2026, various start times (see website)",
+     "price": "£10–£15 per person",
+     "age": "5–9",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Three eccentric elves bring science and elf magic to their factory."
+    },
+    {
+     "title": "The Three Little Pigs",
+     "url": "https://www.jacksonslane.org.uk/events/the-three-little-pigs/",
+     "when": "8 to 13 December 2026, various start times (see website)",
+     "price": "£10–£15 per person",
+     "age": "3+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Puppets, music and comedy as the pigs test which home is wolf-proof."
+    },
+    {
+     "title": "A Christmas Wish",
+     "url": "https://www.jacksonslane.org.uk/events/a-christmas-wish/",
+     "when": "13 to 20 December 2026, various start times (see website)",
+     "price": "£10–£12.50 per person",
+     "age": "0–8",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A gentle dance show with Fern the Christmas Fairy and Eggnog the Elf for little ones."
+    },
+    {
+     "title": "Pinocchio",
+     "url": "https://www.jacksonslane.org.uk/events/pinocchio/",
+     "when": "15 to 20 December 2026, various start times (see website)",
+     "price": "£10–£15 per person",
+     "age": "4+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Puppetry and shadows tell Pinocchio's tale as a carpenter's tools come alive."
+    },
+    {
+     "title": "There's a Monster in Your (Christmas) Show",
+     "url": "https://www.jacksonslane.org.uk/events/theres-a-monster-in-your-christmas-show/",
+     "when": "22 to 28 December 2026, various start times (see website)",
+     "price": "£10–£15 per person",
+     "age": "3+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Tom Fletcher's interactive musical with Little Monster and a festive Elf twist."
+    },
+    {
+     "title": "The Ultimate Bubble Show",
+     "url": "https://www.jacksonslane.org.uk/events/the-ultimate-bubble-show/",
+     "when": "30 December 2026 to 3 January 2027, various start times (see website)",
+     "price": "£10–£15 per person",
+     "age": "All ages",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A bubbleologist builds bubble sculptures and chases the elusive square bubble."
+    }
+   ]
+  },
+  {
+   "name": "Discover Children's Story Centre",
+   "address": "383–387 High Street",
+   "postcode": "E15 4QZ",
+   "lat": 51.539035,
+   "lng": -0.000163,
+   "approx": false,
+   "events": [
+    {
+     "title": "A Gruffalo Gala with Axel Scheffler",
+     "url": "https://discover.org.uk/event/a-gruffalo-gala-with-axel-scheffler-ns",
+     "when": "3 December 2026, 17:30–20:00",
+     "price": "£65 per person (under-1s free)",
+     "age": "All ages",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "An evening with the Gruffalo illustrator: live drawing, stories, a Gruffet and clay modelling."
+    }
+   ]
+  },
+  {
+   "name": "Leicester Square Theatre",
+   "address": "6 Leicester Place",
+   "postcode": "WC2H 7BX",
+   "lat": 51.51134,
+   "lng": -0.130074,
+   "approx": false,
+   "events": [
+    {
+     "title": "Siegfried & Joy: Las Vegas for Kids",
+     "url": "https://www.leicestersquaretheatre.com/show/siegfried-joy-las-vegas-for-kids/",
+     "when": "5 to 6 December 2026, Saturday 13:30, Sunday 15:30",
+     "price": "Adults £23, children £17.25",
+     "age": "4+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A sparkling family magic show full of tricks, silly surprises and illusions."
+    }
+   ]
+  },
+  {
+   "name": "Royal Albert Hall",
+   "address": "Kensington Gore",
+   "postcode": "SW7 2AP",
+   "lat": 51.501269,
+   "lng": -0.177516,
+   "approx": false,
+   "events": [
+    {
+     "title": "Mountbatten Festival of Music 2027",
+     "url": "https://www.royalalberthall.com/tickets/events/2027/mountbatten-festival-of-music-2027",
+     "when": "12 to 13 March 2027, Friday 19:30, Saturday 14:00 and 19:30",
+     "price": "TBC",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Royal Marines bands perform with spectacular lighting, including a Saturday matinee."
+    }
+   ]
+  },
+  {
+   "name": "St Martin-in-the-Fields",
+   "address": "Trafalgar Square",
+   "postcode": "WC2N 4JJ",
+   "lat": 51.50913455633805,
+   "lng": -0.12491583802816897,
+   "approx": true,
+   "events": [
+    {
+     "title": "Family Classics: A Space Exploration",
+     "url": "https://www.stmartin-in-the-fields.org/whats-on/family-classics-a-space-exploration-2/",
+     "when": "8 May 2027, 14:30",
+     "price": "Adults £12.50, under-16s £5",
+     "age": "All ages",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A 45-minute space-themed classical concert with Holst, Star Wars and Wallace & Gromit."
+    }
+   ]
   }
  ],
  "counts": {
   "weekend": 6,
   "ongoing": 37,
   "later": 1,
-  "golden": 0
+  "golden": 12
  },
  "golden_source": {
-  "subject": "The Golden Ticket #89: Events to book right now",
-  "issued": "2026-11-04",
-  "label": "Golden Ticket #89",
-  "url": "https://www.dadsinlondon.com/p/golden-ticket-89"
+  "subject": "The Golden Ticket #90: Events to book right now",
+  "issued": "2026-11-11",
+  "label": "Golden Ticket #90",
+  "url": "https://www.dadsinlondon.com/p/golden-ticket-90-events"
  }
 }
