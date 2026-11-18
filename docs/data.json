@@ -1,121 +1,131 @@
 {
  "source": {
-  "subject": "49 things to do in London this weekend with the kids (14–15 November)",
-  "issued": "2026-11-11",
-  "weekend_label": "14–15 November",
-  "url": "https://www.dadsinlondon.com/p/49-things-to-do-in-london-this-weekend-with-the-kids-14-15-november"
+  "subject": "52 things to do in London this weekend with the kids (21–22 November)",
+  "issued": "2026-11-18",
+  "weekend_label": "21–22 November",
+  "url": "https://www.dadsinlondon.com/p/52-things-to-do-in-london-this-weekend-with-the-kids-21-22-november"
  },
  "venues": [
   {
-   "name": "Young V&A",
-   "address": "Cambridge Heath Road",
-   "postcode": "E2 9PA",
-   "lat": 51.527774,
-   "lng": -0.055182,
+   "name": "Cutty Sark",
+   "address": "King William Walk",
+   "postcode": "SE10 9HT",
+   "lat": 51.483529,
+   "lng": -0.009594,
    "approx": false,
    "events": [
     {
-     "title": "Family Design Challenge",
-     "url": "https://www.vam.ac.uk/event/WpMv9q5lVqB/family-design-challenge-2026-27",
-     "when": "Saturday 14 November, 12:00–16:00",
-     "price": "Free – no booking required",
-     "age": "5–14",
+     "title": "Sea Shanty Festival 2026 at Cutty Sark",
+     "url": "",
+     "when": "Saturday 21 November, 10:00–18:00",
+     "price": "Free with admission (adults £22, 4–15s £11, under-4s free)",
+     "age": "suitable for all",
      "category": "weekend",
      "list": "",
      "featured": true,
-     "blurb": "Parents and kids tackle a professional designer's brief and build a solution together."
+     "blurb": "The Cutty Sark marks its 157th birthday with a day of sea shanties."
     }
    ]
   },
   {
-   "name": "Japan House",
-   "address": "101–111 Kensington High Street",
-   "postcode": "W8 5SA",
-   "lat": 51.500933,
-   "lng": -0.191246,
+   "name": "Dennis Severs’ House",
+   "address": "18 Folgate Street",
+   "postcode": "E1 6BX",
+   "lat": 51.520982,
+   "lng": -0.077324,
    "approx": false,
    "events": [
     {
-     "title": "Tradition/Rebellion: Coming-of-Age Style in Kitakyushu, Japan",
-     "url": "https://www.japanhouselondon.uk/whats-on/traditionrebellion-coming-of-age-style-in-kitakyushu-japan",
-     "when": "Daily until 18 April, weekends 10:00–18:00 and weekdays 10:00–20:00",
-     "price": "Free – book free tickets for guaranteed entry",
-     "age": "",
+     "title": "Christmas at Dennis Severs’ House",
+     "url": "https://www.dennissevershouse.co.uk/calendar",
+     "when": "Wednesday–Sunday until 10 January, timeslots between 12:00 and 15:15",
+     "price": "£17.50 per person",
+     "age": "once they’re old enough not to knock anything over (see below)",
      "category": "ongoing",
      "list": "",
      "featured": true,
-     "blurb": "Spectacular outfits of Japan's 20-year-olds, shown with films, interviews and tactile displays."
+     "blurb": "A candlelit Spitalfields house dressed for Christmas, with relaxed daytime family visits."
     }
    ]
   },
   {
-   "name": "Lord Mayor's Show route",
-   "address": "Bank to St Paul's and the Embankment (see website)",
-   "postcode": "EC4N 8BH",
-   "lat": 51.51299,
-   "lng": -0.089623,
+   "name": "Barbican Centre",
+   "address": "Silk Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
    "approx": false,
    "events": [
     {
-     "title": "The Lord Mayor's Show",
-     "url": "https://www.lordmayorsshow.london",
-     "when": "Saturday 14 November, 11:00–14:30",
-     "price": "FREE – no booking required",
-     "age": "",
+     "title": "Reverie Cineclub Presents: Hubley Hash + music with trumpeter Olivia Cuttill",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-reverie-cineclub-presents-hubley-hash",
+     "when": "Saturday 21 November, 11:00",
+     "price": "Adults £5, under-18s £2.50",
+     "age": "7+",
      "category": "weekend",
      "list": "",
      "featured": true,
-     "blurb": "A procession of 6,500 people, 250 horses, floats and bands as the new Lord Mayor takes office."
+     "blurb": "Family film club screening rule-breaking Hubley cartoons with live trumpet."
     }
    ]
   },
   {
-   "name": "Firepit art gallery",
-   "address": "10 Cutter Lane, Ground Floor Retail Unit",
-   "postcode": "SE10 0XX",
-   "lat": 51.501697,
-   "lng": 0.007163,
+   "name": "The Cockpit",
+   "address": "Gateforth Street",
+   "postcode": "NW8 8EH",
+   "lat": 51.524449,
+   "lng": -0.169267,
    "approx": false,
    "events": [
     {
-     "title": "Does Size Matter?",
-     "url": "https://www.firepit.art/exhibitions/does-size-matter",
-     "when": "Until 30 January, Tuesday–Saturday 11:00–17:00 (until 19:00 on Thursdays)",
-     "price": "FREE – no booking required",
-     "age": "",
-     "category": "ongoing",
+     "title": "Family Shakespeare – Pyramus & Thisbe: Help Us Write A Play!",
+     "url": "https://www.thecockpit.org.uk/show/family_shakespeare_pyramus_thisbe_-_november",
+     "when": "Saturday 21 November, 14:00",
+     "price": "Pay what you can: £18, £15 or £13 per person; family deal for 4: buy 3 tickets and get the 4th free",
+     "age": "5+",
+     "category": "weekend",
      "list": "",
      "featured": true,
-     "blurb": "Over 150 small artworks, none bigger than 50cm and all for sale at £500 or less."
+     "blurb": "Kids help invent a new Pyramus and Thisbe as Bottom's troupe prepare for the wedding."
     }
    ]
   },
   {
-   "name": "Somerset House",
-   "address": "Strand",
-   "postcode": "WC2R 1LA",
-   "lat": 51.510926,
-   "lng": -0.117683,
+   "name": "Leica Gallery London",
+   "address": "14 Dover Street",
+   "postcode": "W1S 4LW",
+   "lat": 51.508362,
+   "lng": -0.141869,
    "approx": false,
    "events": [
     {
-     "title": "Skate at Somerset House",
-     "url": "http://www.somersethouse.org.uk/whats-on/skate-somerset-house",
-     "when": "Daily until 10 January, timeslots between 09:00 and 22:45",
-     "price": "Adults (13+) £21–£23, under-13s £14.25–£15.50",
+     "title": "David Bailey – Time After Time",
+     "url": "https://leica-camera.com/en-GB/event/gallery-london-david-bailey-time-after-time",
+     "when": "Monday–Saturday until 14 January, 10:00–18:00",
+     "price": "FREE",
      "age": "",
      "category": "ongoing",
      "list": "",
      "featured": true,
-     "blurb": "Early-Christmas skating in the courtyard, with a Kids Skate Club for 6–12-year-olds."
-    },
+     "blurb": "Free exhibition of Bailey's street photographs of old London, all prints for sale."
+    }
+   ]
+  },
+  {
+   "name": "Jacksons Lane",
+   "address": "269a Archway Road",
+   "postcode": "N6 5AA",
+   "lat": 51.57711,
+   "lng": -0.146368,
+   "approx": false,
+   "events": [
     {
-     "title": "Jenkin van Zyl: Enclosure",
-     "url": "https://www.somersethouse.org.uk/whats-on/jenkin-van-zyl-enclosure",
-     "when": "Tuesday–Sunday until 29 November, various timeslots each day",
-     "price": "FREE – booking required",
-     "age": "13+",
-     "category": "ongoing",
+     "title": "The Sleep Show",
+     "url": "",
+     "when": "Saturday 21 and Sunday 22 November, 11:00 and 14:00",
+     "price": "£12.50 per person",
+     "age": "3+",
+     "category": "weekend",
      "list": "",
      "featured": false,
      "blurb": ""
@@ -123,20 +133,20 @@
    ]
   },
   {
-   "name": "Dugdale Arts Centre",
-   "address": "39 London Road, Enfield",
-   "postcode": "EN2 6DS",
-   "lat": 51.649837,
-   "lng": -0.080695,
+   "name": "artsdepot",
+   "address": "5 Nether Street",
+   "postcode": "N12 0GA",
+   "lat": 51.612818,
+   "lng": -0.176705,
    "approx": false,
    "events": [
     {
-     "title": "Rosie Robin and the Christmas Post",
-     "url": "https://www.dugdaleartscentre.co.uk/whats-on/rosie-robin-and-the-christmas-post",
-     "when": "11–31 December, various times (usually 10:30 and 13:00)",
-     "price": "Adults £15.50, under-16s £13.50",
-     "age": "2–5",
-     "category": "later",
+     "title": "LIT/UP: Big Beat Playground – Flying High",
+     "url": "",
+     "when": "Sunday 22 November, 11:00–15:00 (last entry 14:30)",
+     "price": "£9.50 per person",
+     "age": "0–11",
+     "category": "weekend",
      "list": "",
      "featured": false,
      "blurb": ""
@@ -145,18 +155,18 @@
   },
   {
    "name": "Woolwich Works",
-   "address": "Ropekeepers Studio, 11 No. 1 Street, Royal Arsenal",
+   "address": "Fireworks Factory, 11 No. 1 Street, Royal Arsenal",
    "postcode": "SE18 6HD",
    "lat": 51.494451,
    "lng": 0.069095,
    "approx": false,
    "events": [
     {
-     "title": "Captain Cauliflower and Marvin the Mischievous Moose",
-     "url": "https://www.woolwich.works/EVENTS/CAPTAIN-CAULIFLOWER-AND-MARVIN-THE-MISCHIEVOUS-MOOSE",
-     "when": "Sunday 15 November, 11:00 and 14:00",
-     "price": "£12 per person, family ticket £43.20 (four people), plus £1.50 booking fee per ticket",
-     "age": "3–8",
+     "title": "National Children's Orchestras Winter Concert 2026",
+     "url": "",
+     "when": "Sunday 22 November, 15:00 (pre-concert Q&A 14:00–14:25)",
+     "price": "Adults £23, under-18s £9, under-5s free",
+     "age": "Suitable for all",
      "category": "weekend",
      "list": "",
      "featured": false,
@@ -165,84 +175,20 @@
    ]
   },
   {
-   "name": "Barbican Centre",
-   "address": "Silk Street (Cinema 2, Beech Street)",
-   "postcode": "EC2Y 8DS",
-   "lat": 51.519961,
-   "lng": -0.094103,
-   "approx": false,
+   "name": "Lower Stable Street",
+   "address": "King's Cross",
+   "postcode": "N1C 4LW",
+   "lat": 51.53693171951219,
+   "lng": -0.12588356097560974,
+   "approx": true,
    "events": [
     {
-     "title": "Family Film Club: Ernest and Celestine – Winter Tales",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-ernest-and-celestine-winter-tales",
-     "when": "Saturday 14 November, 11:00",
-     "price": "Adults £5, under-18s £2.50",
-     "age": "4+ (U)",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Hamlet: Hail to the Thief",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/hamlet-hail-to-the-thief",
-     "when": "Until Saturday 23 January, various performance times (see website)",
-     "price": "From £34 per person (including transaction fee)",
-     "age": "14+",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Robert Ryman: The Real Thing",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing",
-     "when": "Tuesday–Sunday until 28 February, 10:00–17:00 (until 19:00 on Thursdays and Fridays)",
-     "price": "Adults £20.50, under-16s free",
+     "title": "Shōtengai Pan-Asian Market",
+     "url": "",
+     "when": "Saturday 21 and Sunday 22 November, 11:00–18:00",
+     "price": "FREE – no booking required",
      "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "National Theatre",
-   "address": "Olivier Theatre",
-   "postcode": "SE1 9PX",
-   "lat": 51.506866,
-   "lng": -0.11406,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Jungle Book",
-     "url": "https://www.nationaltheatre.org.uk/productions/the-jungle-book/",
-     "when": "Until Saturday 6 February, various performance times (see website)",
-     "price": "£20–£105 per person",
-     "age": "7+",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Unicorn Theatre",
-   "address": "147 Tooley Street",
-   "postcode": "SE1 2HZ",
-   "lat": 51.503906,
-   "lng": -0.080709,
-   "approx": false,
-   "events": [
-    {
-     "title": "Santa's First Christmas",
-     "url": "https://www.unicorntheatre.com/events/santas-first-christmas",
-     "when": "Until Sunday 3 January, various performance times (see website)",
-     "price": "From £7 per person",
-     "age": "4+",
-     "category": "ongoing",
+     "category": "weekend",
      "list": "",
      "featured": false,
      "blurb": ""
@@ -258,11 +204,11 @@
    "approx": false,
    "events": [
     {
-     "title": "Bones in the Desert",
-     "url": "https://www.halfmoon.org.uk/events/bones-in-the-desert/",
-     "when": "Until Tuesday 17 November, various performance times (see website)",
+     "title": "A Tale of Us",
+     "url": "",
+     "when": "Saturday 21 November, 11:00, 13:00 and 15:00",
      "price": "£9 per person",
-     "age": "13+",
+     "age": "0–18 months",
      "category": "weekend",
      "list": "",
      "featured": false,
@@ -271,823 +217,32 @@
    ]
   },
   {
-   "name": "Saatchi Gallery",
-   "address": "Duke of York's HQ, King's Road",
-   "postcode": "SW3 4RY",
-   "lat": 51.490733,
-   "lng": -0.158777,
+   "name": "Grand Junction, St Mary Magdalene's Church",
+   "address": "Rowington Close",
+   "postcode": "W2 5TF",
+   "lat": 51.522466,
+   "lng": -0.189254,
    "approx": false,
    "events": [
     {
-     "title": "Beyond the Streets",
-     "url": "https://www.saatchigallery.com/exhibition/beyond-the-streets",
-     "when": "Daily until 5 May, 10:00–18:00",
-     "price": "From £15 per person, under-6s free (concessions and family tickets available)",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Dock X",
-   "address": "Unit 1, Canada Water Retail Park, Surrey Quays Road",
-   "postcode": "SE16 2XU",
-   "lat": 51.496771,
-   "lng": -0.051028,
-   "approx": false,
-   "events": [
-    {
-     "title": "Alice Immersive Wonderland",
-     "url": "https://fever.pxf.io/QYr6mx",
-     "when": "Until 21 March, various timeslots (see website)",
-     "price": "Adults £26, 4–15s £19, 0–3s £1.50, plus £2 booking fee per ticket (family bundles available)",
+     "title": "Loved & Wanted Autumn Festival",
+     "url": "",
+     "when": "Saturday 21 November, 13:30–16:30",
+     "price": "FREE – no booking required",
      "age": "Suitable for all",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Monopoly Lifesized",
-   "address": "213–215 Tottenham Court Road",
-   "postcode": "W1T 7PS",
-   "lat": 51.520061,
-   "lng": -0.133335,
-   "approx": false,
-   "events": [
-    {
-     "title": "Mini Genius Lab",
-     "url": "https://fever.pxf.io/yZA1QN",
-     "when": "Various dates and timeslots until 3 January",
-     "price": "Adults (11+) £24.15, 3–10s £30.45, family pack (3 or more people) £24.15 per person",
-     "age": "3–12",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "National Portrait Gallery",
-   "address": "St Martin's Place",
-   "postcode": "WC2H 0HE",
-   "lat": 51.509399,
-   "lng": -0.128453,
-   "approx": false,
-   "events": [
-    {
-     "title": "Winston Taylor Photo Portrait Prize 2026",
-     "url": "https://www.npg.org.uk/whatson/exhibitions/2026/winston-taylor-photo-portrait-prize-2026",
-     "when": "Daily until 17 January, 10:30–18:00 (until 21:00 on Friday and Saturday)",
-     "price": "Adults £12, 12–18s £5, under-12s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Royal Mews",
-   "address": "Buckingham Palace Road",
-   "postcode": "SW1W 0QH",
-   "lat": 51.498766,
-   "lng": -0.145198,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Royal Mews Christmas Shop",
-     "url": "https://www.royalcollectionshop.co.uk/royal-mews-christmas-shop",
-     "when": "Until Monday 4 January, Thursday–Monday 10:00–17:30",
-     "price": "FREE – no booking required",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Southbank Centre",
-   "address": "Queen's Walk, under Hungerford Bridge",
-   "postcode": "SE1 8XX",
-   "lat": 51.505768,
-   "lng": -0.1168,
-   "approx": false,
-   "events": [
-    {
-     "title": "Winter Market",
-     "url": "https://www.southbankcentre.co.uk/activity/winter-market",
-     "when": "Daily until 3 January, stalls 11:00–22:00, bars 11:00–23:00",
-     "price": "FREE – no booking required",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Koestler Arts: Rock, Paper, Scissors",
-     "url": "https://www.southbankcentre.co.uk/whats-on/koestler-arts-rock-paper-scissors",
-     "when": "Tuesday–Sunday until 29 November, 12:00–20:00",
-     "price": "FREE – no booking required",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Polka Theatre",
-   "address": "240 The Broadway",
-   "postcode": "SW19 1SB",
-   "lat": 51.419706,
-   "lng": -0.194497,
-   "approx": false,
-   "events": [
-    {
-     "title": "Peter Pan",
-     "url": "https://polkatheatre.com/event/peter-pan/",
-     "when": "Until Sunday 24 January, various performance times (see website)",
-     "price": "£10–£26 per person, under-12-months £1",
-     "age": "5–12",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "British Library",
-   "address": "96 Euston Road",
-   "postcode": "NW1 2DB",
-   "lat": 51.529987,
-   "lng": -0.126989,
-   "approx": false,
-   "events": [
-    {
-     "title": "Agatha Christie: A World of Mystery",
-     "url": "https://events.bl.uk/exhibitions/agathachristie",
-     "when": "Daily until 20 June, various opening times (see website)",
-     "price": "Adults £25, under-16s £6",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Lightroom",
-   "address": "12 Lewis Cubitt Square",
-   "postcode": "N1C 4DY",
-   "lat": 51.537235,
-   "lng": -0.126431,
-   "approx": false,
-   "events": [
-    {
-     "title": "Larger Than Life: Starring Wallace & Gromit, Shaun and More",
-     "url": "https://lightroom.uk/whats-on/larger-than-life/",
-     "when": "Daily until 4 January, entry timeslots throughout the day",
-     "price": "Adults £25, 3–18s £15 (families of 3+ get 15% off at checkout on selected timeslots)",
-     "age": "Younger children must be supervised",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Guildhall Art Gallery",
-   "address": "Guildhall Yard",
-   "postcode": "EC2V 5AE",
-   "lat": 51.515276,
-   "lng": -0.091906,
-   "approx": false,
-   "events": [
-    {
-     "title": "Beyond Bayeux: Tapestry Now Exhibition",
-     "url": "https://onecitylondon.com/event/beyond-bayeux-tapestry-now-exhibition/",
-     "when": "Daily until 21 March, timeslots between 10:00 and 16:30",
-     "price": "Pay what you can (including \"free\") – booking required",
-     "age": "Suitable for all",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Tate Britain",
-   "address": "Millbank",
-   "postcode": "SW1P 4RG",
-   "lat": 51.490871,
-   "lng": -0.127181,
-   "approx": false,
-   "events": [
-    {
-     "title": "The 90s: Art and Fashion",
-     "url": "https://www.tate.org.uk/whats-on/tate-britain/the-90s",
-     "when": "Daily until 14 February, 10:00–18:00",
-     "price": "Adults £22, 12–18s £5, under-12s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Handel Hendrix House",
-   "address": "25 Brook Street",
-   "postcode": "W1K 4HB",
-   "lat": 51.512967,
-   "lng": -0.145904,
-   "approx": false,
-   "events": [
-    {
-     "title": "Ronnie Wood: The Jimi Hendrix Portraits",
-     "url": "https://handelhendrix.org/events/ronnie-wood-the-jimi-hendrix-portraits",
-     "when": "Wednesday–Sunday until 11 April, 10:00–17:00",
-     "price": "Free with general admission (adults £14.50, 13–17s £5, under-13s free as part of a family group)",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Puppet Theatre Barge",
-   "address": "Blomfield Road, Little Venice",
-   "postcode": "W9 2PF",
-   "lat": 51.521645,
-   "lng": -0.183218,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Town Mouse and the Country Mouse",
-     "url": "https://www.tickettailor.com/events/artofthepuppetltd/2297412",
-     "when": "Various dates until 15 November, various performance times (see website)",
-     "price": "Adults £15, 2–16s £12, under-2s free",
-     "age": "3–7",
      "category": "weekend",
      "list": "",
      "featured": false,
      "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Museum of Youth Culture",
-   "address": "51 St Pancras Way",
-   "postcode": "NW1 0PZ",
-   "lat": 51.540003,
-   "lng": -0.135951,
-   "approx": false,
-   "events": [
-    {
-     "title": "Up Yours! God Save the Queens",
-     "url": "https://upyourscollective.com/exhibition",
-     "when": "Wednesday–Sunday until 22 November, 12:00–18:00",
-     "price": "FREE – advance booking recommended",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "V&A South Kensington",
-   "address": "Cromwell Road",
-   "postcode": "SW7 2RL",
-   "lat": 51.496941,
-   "lng": -0.172199,
-   "approx": false,
-   "events": [
-    {
-     "title": "Freddie Mercury | Splendid Things",
-     "url": "https://www.vam.ac.uk/exhibitions/freddie-mercury-splendid-things",
-     "when": "Daily until 17 January, 10:00–17:45 (until 22:00 on Fridays)",
-     "price": "FREE – no booking required",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Dulwich Picture Gallery",
-   "address": "Gallery Road",
-   "postcode": "SE21 7AD",
-   "lat": 51.445613,
-   "lng": -0.08668,
-   "approx": false,
-   "events": [
-    {
-     "title": "Hokusai: Thirty-six Views of Mount Fuji from the Iuchi Collection",
-     "url": "https://www.dulwichpicturegallery.org.uk/whats-on/hokusai-thirty-six-views-of-mt-fuji-from-the-iuchi-collection/",
-     "when": "Tuesday–Sunday until 17 January, 10:00–17:00",
-     "price": "Adults £19, under-18s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Royal Academy",
-   "address": "Burlington House, Piccadilly",
-   "postcode": "W1J 0BD",
-   "lat": 51.509099,
-   "lng": -0.139576,
-   "approx": false,
-   "events": [
-    {
-     "title": "Painting the French Riviera",
-     "url": "https://www.royalacademy.org.uk/exhibition/painting-the-french-riviera",
-     "when": "Tuesday–Sunday until 31 January, 10:00–18:00 (Friday and Saturday until 21:00)",
-     "price": "Adults £26, under-16s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Tate Modern",
-   "address": "Bankside",
-   "postcode": "SE1 9TG",
-   "lat": 51.507618,
-   "lng": -0.099374,
-   "approx": false,
-   "events": [
-    {
-     "title": "Light and Magic: The Birth of Art Photography",
-     "url": "https://www.tate.org.uk/whats-on/tate-modern/light-and-magic",
-     "when": "Daily until 21 February, 10:00–18:00 (Friday and Saturday until 21:00)",
-     "price": "Adults £20, 12–18s £5, under-12s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Somerset House",
-   "address": "Strand",
-   "postcode": "WC2R 0RN",
-   "lat": 51.510734,
-   "lng": -0.116912,
-   "approx": false,
-   "events": [
-    {
-     "title": "Salman Toor: Someone Like You",
-     "url": "https://courtauld.ac.uk/whats-on/exh-salman-toor-someone-like-you/",
-     "when": "Daily until 10 January, 10:00–18:00",
-     "price": "Adults £16, under-19s free (includes the permanent collection)",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "National Gallery",
-   "address": "Trafalgar Square",
-   "postcode": "WC2N 5DN",
-   "lat": 51.509098,
-   "lng": -0.127658,
-   "approx": false,
-   "events": [
-    {
-     "title": "Renoir and Love",
-     "url": "https://www.nationalgallery.org.uk/exhibitions/renoir-and-love",
-     "when": "Daily until 31 January, 10:00–18:00 (Friday until 21:00)",
-     "price": "Adults £25, under-18s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Troubadour Wembley Park Theatre",
-   "address": "3 Fulton Road, Wembley",
-   "postcode": "HA9 0SP",
-   "lat": 51.561251,
-   "lng": -0.281923,
-   "approx": false,
-   "events": [
-    {
-     "title": "High School Musical",
-     "url": "https://www.kxtickets.com/whats-on/high-school-musical",
-     "when": "Until 3 January, various performance times",
-     "price": "£35–£199 per person",
-     "age": "6+ (under-3s not admitted)",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Design Museum",
-   "address": "224–238 Kensington High Street",
-   "postcode": "W8 6AG",
-   "lat": 51.499874,
-   "lng": -0.200163,
-   "approx": false,
-   "events": [
-    {
-     "title": "LAIKA presents Wildwood: The Exhibition",
-     "url": "https://designmuseum.org/exhibitions/laika-presents-wildwood-the-exhibition",
-     "when": "Until 10 January, 10:00–17:00 Monday–Thursday and 10:00–18:00 Friday–Sunday",
-     "price": "Adults £17.09, 6–15s £8.55, under-6s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    },
-    {
-     "title": "Es Devlin: Other Worlds",
-     "url": "https://designmuseum.org/exhibitions/es-devlin-other-worlds",
-     "when": "Until 4 April, 10:00–18:00 (until 17:00 Monday–Thursday)",
-     "price": "Adults £21, 6–15s £11, under-6s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Science Museum",
-   "address": "Exhibition Road",
-   "postcode": "SW7 2DD",
-   "lat": 51.497296,
-   "lng": -0.176493,
-   "approx": false,
-   "events": [
-    {
-     "title": "Pokémon Space Trail",
-     "url": "https://www.sciencemuseum.org.uk/see-and-do/pokemon-space-trail",
-     "when": "Daily until 3 January, 10:00–18:00",
-     "price": "FREE – but you need to book a free admission ticket to enter",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Eclipso Immersive Entertainment",
-   "address": "213–219 Camden High Street",
-   "postcode": "NW1 7BT",
-   "lat": 51.5393,
-   "lng": -0.143218,
-   "approx": false,
-   "events": [
-    {
-     "title": "Everest: The First Ascent – An immersive experience in London",
-     "url": "https://fever.pxf.io/dyJAQQ",
-     "when": "Wednesday–Sunday (and daily during half term) until 31 December, 10:00 or 11:00–19:00",
-     "price": "Adults £27.50, 8–17s £21.50 (family bundles and London resident pricing also available)",
-     "age": "8+",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "British Museum",
-   "address": "Great Russell Street",
-   "postcode": "WC1B 3DG",
-   "lat": 51.519364,
-   "lng": -0.126848,
-   "approx": false,
-   "events": [
-    {
-     "title": "Korea",
-     "url": "https://www.britishmuseum.org/exhibitions/korea",
-     "when": "Daily until 31 January, 10:00–17:00 (Fridays until 20:30)",
-     "price": "Adults £20, under-16s free",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Sussex Mansions",
-   "address": "79–85 Old Brompton Road",
-   "postcode": "SW7 3LD",
-   "lat": 51.492457,
-   "lng": -0.176989,
-   "approx": false,
-   "events": [
-    {
-     "title": "Body Worlds: The Anatomy of Happiness",
-     "url": "https://fever.pxf.io/rEykNd",
-     "when": "Until 21 March, various timeslots each day",
-     "price": "Adults £24.61, 6–17s £16.05 (family bundles also available)",
-     "age": "Suitable for all (some mature content)",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Serpentine North",
-   "address": "West Carriage Drive",
-   "postcode": "W2 2AR",
-   "lat": 51.50707,
-   "lng": -0.171261,
-   "approx": false,
-   "events": [
-    {
-     "title": "Amar Kanwar Exhibition",
-     "url": "https://www.serpentinegalleries.org/whats-on/amar-kanwar-exhibition/",
-     "when": "Until 31 January, Tuesday–Sunday 10:00–17:00",
-     "price": "FREE, but booking required",
-     "age": "",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Little Angel Theatre",
-   "address": "14 Dagmar Passage",
-   "postcode": "N1 2DN",
-   "lat": 51.539016,
-   "lng": -0.101267,
-   "approx": false,
-   "events": [
-    {
-     "title": "Pip and Posy Live on Stage",
-     "url": "https://www.littleangeltheatre.com/whats-on/pip-and-posy-live-on-stage",
-     "when": "Until 22 November, various start times (see website)",
-     "price": "Adults £16, 1–17s £14",
-     "age": "2–5",
-     "category": "ongoing",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Cutty Sark",
-   "address": "King William Walk",
-   "postcode": "SE10 9HT",
-   "lat": 51.483529,
-   "lng": -0.009594,
-   "approx": false,
-   "events": [
-    {
-     "title": "Cutty Sark Sea Shanty Festival 2026",
-     "url": "https://www.rmg.co.uk/whats-on/cutty-sark/sea-shanty-festival-2026",
-     "when": "21 November 2026, 10:00–18:00",
-     "price": "Free with Cutty Sark admission (adults £22, 4–15s £11, under-4s free)",
-     "age": "All ages",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A day of joyful maritime music marking the tea clipper's 157th birthday."
-    }
-   ]
-  },
-  {
-   "name": "The Well Walk Theatre",
-   "address": "49 Willow Road",
-   "postcode": "NW3 1TS",
-   "lat": 51.557575,
-   "lng": -0.174269,
-   "approx": false,
-   "events": [
-    {
-     "title": "Cartoon Christmas Loop",
-     "url": "https://shop.beyonk.com/2wopiy2m/experiences/ex_0scwco06ziabgoi9?group=experiences",
-     "when": "21 to 22 November 2026, 13:00–18:00",
-     "price": "£7.42 per person",
-     "age": "3+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Drop-in screenings of vintage Christmas cartoons on a relaxed continuous loop."
-    }
-   ]
-  },
-  {
-   "name": "Jacksons Lane Arts Centre",
-   "address": "269a Archway Road",
-   "postcode": "N6 5AA",
-   "lat": 51.57711,
-   "lng": -0.146368,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Elf Factory",
-     "url": "https://www.jacksonslane.org.uk/events/the-elf-factory/",
-     "when": "1 to 6 December 2026, various start times (see website)",
-     "price": "£10–£15 per person",
-     "age": "5–9",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Three eccentric elves bring science and elf magic to their factory."
-    },
-    {
-     "title": "The Three Little Pigs",
-     "url": "https://www.jacksonslane.org.uk/events/the-three-little-pigs/",
-     "when": "8 to 13 December 2026, various start times (see website)",
-     "price": "£10–£15 per person",
-     "age": "3+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Puppets, music and comedy as the pigs test which home is wolf-proof."
-    },
-    {
-     "title": "A Christmas Wish",
-     "url": "https://www.jacksonslane.org.uk/events/a-christmas-wish/",
-     "when": "13 to 20 December 2026, various start times (see website)",
-     "price": "£10–£12.50 per person",
-     "age": "0–8",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A gentle dance show with Fern the Christmas Fairy and Eggnog the Elf for little ones."
-    },
-    {
-     "title": "Pinocchio",
-     "url": "https://www.jacksonslane.org.uk/events/pinocchio/",
-     "when": "15 to 20 December 2026, various start times (see website)",
-     "price": "£10–£15 per person",
-     "age": "4+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Puppetry and shadows tell Pinocchio's tale as a carpenter's tools come alive."
-    },
-    {
-     "title": "There's a Monster in Your (Christmas) Show",
-     "url": "https://www.jacksonslane.org.uk/events/theres-a-monster-in-your-christmas-show/",
-     "when": "22 to 28 December 2026, various start times (see website)",
-     "price": "£10–£15 per person",
-     "age": "3+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Tom Fletcher's interactive musical with Little Monster and a festive Elf twist."
-    },
-    {
-     "title": "The Ultimate Bubble Show",
-     "url": "https://www.jacksonslane.org.uk/events/the-ultimate-bubble-show/",
-     "when": "30 December 2026 to 3 January 2027, various start times (see website)",
-     "price": "£10–£15 per person",
-     "age": "All ages",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A bubbleologist builds bubble sculptures and chases the elusive square bubble."
-    }
-   ]
-  },
-  {
-   "name": "Discover Children's Story Centre",
-   "address": "383–387 High Street",
-   "postcode": "E15 4QZ",
-   "lat": 51.539035,
-   "lng": -0.000163,
-   "approx": false,
-   "events": [
-    {
-     "title": "A Gruffalo Gala with Axel Scheffler",
-     "url": "https://discover.org.uk/event/a-gruffalo-gala-with-axel-scheffler-ns",
-     "when": "3 December 2026, 17:30–20:00",
-     "price": "£65 per person (under-1s free)",
-     "age": "All ages",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "An evening with the Gruffalo illustrator: live drawing, stories, a Gruffet and clay modelling."
-    }
-   ]
-  },
-  {
-   "name": "Leicester Square Theatre",
-   "address": "6 Leicester Place",
-   "postcode": "WC2H 7BX",
-   "lat": 51.51134,
-   "lng": -0.130074,
-   "approx": false,
-   "events": [
-    {
-     "title": "Siegfried & Joy: Las Vegas for Kids",
-     "url": "https://www.leicestersquaretheatre.com/show/siegfried-joy-las-vegas-for-kids/",
-     "when": "5 to 6 December 2026, Saturday 13:30, Sunday 15:30",
-     "price": "Adults £23, children £17.25",
-     "age": "4+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A sparkling family magic show full of tricks, silly surprises and illusions."
-    }
-   ]
-  },
-  {
-   "name": "Royal Albert Hall",
-   "address": "Kensington Gore",
-   "postcode": "SW7 2AP",
-   "lat": 51.501269,
-   "lng": -0.177516,
-   "approx": false,
-   "events": [
-    {
-     "title": "Mountbatten Festival of Music 2027",
-     "url": "https://www.royalalberthall.com/tickets/events/2027/mountbatten-festival-of-music-2027",
-     "when": "12 to 13 March 2027, Friday 19:30, Saturday 14:00 and 19:30",
-     "price": "TBC",
-     "age": "5+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Royal Marines bands perform with spectacular lighting, including a Saturday matinee."
-    }
-   ]
-  },
-  {
-   "name": "St Martin-in-the-Fields",
-   "address": "Trafalgar Square",
-   "postcode": "WC2N 4JJ",
-   "lat": 51.50913455633805,
-   "lng": -0.12491583802816897,
-   "approx": true,
-   "events": [
-    {
-     "title": "Family Classics: A Space Exploration",
-     "url": "https://www.stmartin-in-the-fields.org/whats-on/family-classics-a-space-exploration-2/",
-     "when": "8 May 2027, 14:30",
-     "price": "Adults £12.50, under-16s £5",
-     "age": "All ages",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A 45-minute space-themed classical concert with Holst, Star Wars and Wallace & Gromit."
     }
    ]
   }
  ],
  "counts": {
-  "weekend": 6,
-  "ongoing": 37,
-  "later": 1,
-  "golden": 12
+  "weekend": 9,
+  "ongoing": 2,
+  "later": 0,
+  "golden": 0
  },
  "golden_source": {
   "subject": "The Golden Ticket #90: Events to book right now",
