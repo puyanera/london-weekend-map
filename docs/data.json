@@ -236,18 +236,114 @@
      "blurb": ""
     }
    ]
+  },
+  {
+   "name": "The Garden Cinema",
+   "address": "39-41 Parker Street",
+   "postcode": "WC2B 5PQ",
+   "lat": 51.516228,
+   "lng": -0.12137,
+   "approx": false,
+   "events": [
+    {
+     "title": "Snow White and the Seven Dwarfs",
+     "url": "https://www.thegardencinema.co.uk/film/snow-white-and-the-seven-dwarfs/",
+     "when": "28–29 November 2026, 11:00",
+     "price": "Pay what you can",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Disney's first feature-length classic on the big screen, with a free kids' activity on Sunday."
+    },
+    {
+     "title": "Pinocchio (2019) (Subbed)",
+     "url": "https://www.thegardencinema.co.uk/film/pinocchio-2019/",
+     "when": "5–6 December 2026, 11:00",
+     "price": "Pay what you can",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Garrone's live-action Pinocchio in Italian with subtitles, plus a free Sunday kids' activity."
+    }
+   ]
+  },
+  {
+   "name": "Soho Theatre Walthamstow",
+   "address": "186 Hoe Street",
+   "postcode": "E17 4QH",
+   "lat": 51.586499,
+   "lng": -0.020398,
+   "approx": false,
+   "events": [
+    {
+     "title": "The Gruffalo",
+     "url": "https://sohotheatre.com/events/the-gruffalo/",
+     "when": "12–13 December 2026, 10:30 and 13:30",
+     "price": "£15–£30 per person",
+     "age": "3+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Tall Stories' musical Gruffalo returns for its 25th anniversary."
+    },
+    {
+     "title": "Musical Magic Box",
+     "url": "https://sohotheatre.com/events/musical-magic-box-3/",
+     "when": "19 December 2026, 10:30",
+     "price": "1 adult + 1 child £12",
+     "age": "18 months+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Interactive storytelling with live music and guitar for little ones."
+    },
+    {
+     "title": "The Nutcracker and the Mouse King",
+     "url": "https://sohotheatre.com/events/the-nutcracker-and-the-mouse-king/",
+     "when": "22 December 2026 to 3 January 2027, various start times (see website)",
+     "price": "£15–£32 per person",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Little Bulb's silly, cardboard-crafted reimagining of the Nutcracker tale."
+    }
+   ]
+  },
+  {
+   "name": "Park Theatre",
+   "address": "Clifton Terrace",
+   "postcode": "N4 3JP",
+   "lat": 51.565668,
+   "lng": -0.10841,
+   "approx": false,
+   "events": [
+    {
+     "title": "A Dickens of a Christmas",
+     "url": "https://parktheatre.co.uk/events/a-dickens-of-a-christmas/",
+     "when": "15 December 2026 to 9 January 2027, Tuesday–Sunday 19:00, Thursday and Sunday also 15:15",
+     "price": "£15–£25 per person (usually £25 on weekends)",
+     "age": "10+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A madcap, carol-filled romp through Dickens' lesser-known Christmas stories."
+    }
+   ]
   }
  ],
  "counts": {
   "weekend": 9,
   "ongoing": 2,
   "later": 0,
-  "golden": 0
+  "golden": 6
  },
  "golden_source": {
-  "subject": "The Golden Ticket #90: Events to book right now",
-  "issued": "2026-11-11",
-  "label": "Golden Ticket #90",
-  "url": "https://www.dadsinlondon.com/p/golden-ticket-90-events"
+  "subject": "The Golden Ticket #91: Events to book right now",
+  "issued": "2026-11-18",
+  "label": "Golden Ticket #91",
+  "url": "https://www.dadsinlondon.com/p/golden-ticket-91"
  }
 }
