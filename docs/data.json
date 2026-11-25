@@ -1,171 +1,56 @@
 {
  "source": {
-  "subject": "52 things to do in London this weekend with the kids (21–22 November)",
-  "issued": "2026-11-18",
-  "weekend_label": "21–22 November",
-  "url": "https://www.dadsinlondon.com/p/52-things-to-do-in-london-this-weekend-with-the-kids-21-22-november"
+  "subject": "68 things to do in London this weekend with the kids (28–29 November)",
+  "issued": "2026-11-25",
+  "weekend_label": "28–29 November",
+  "url": "https://www.dadsinlondon.com/p/68-things-to-do-in-london-this-weekend-with-the-kids-28-29-november"
  },
  "venues": [
   {
-   "name": "Cutty Sark",
-   "address": "King William Walk",
-   "postcode": "SE10 9HT",
-   "lat": 51.483529,
-   "lng": -0.009594,
+   "name": "Hampton Court Palace",
+   "address": "East Molesey",
+   "postcode": "KT8 9AU",
+   "lat": 51.403812,
+   "lng": -0.337649,
    "approx": false,
    "events": [
     {
-     "title": "Sea Shanty Festival 2026 at Cutty Sark",
-     "url": "",
-     "when": "Saturday 21 November, 10:00–18:00",
-     "price": "Free with admission (adults £22, 4–15s £11, under-4s free)",
-     "age": "suitable for all",
-     "category": "weekend",
-     "list": "",
-     "featured": true,
-     "blurb": "The Cutty Sark marks its 157th birthday with a day of sea shanties."
-    }
-   ]
-  },
-  {
-   "name": "Dennis Severs’ House",
-   "address": "18 Folgate Street",
-   "postcode": "E1 6BX",
-   "lat": 51.520982,
-   "lng": -0.077324,
-   "approx": false,
-   "events": [
-    {
-     "title": "Christmas at Dennis Severs’ House",
-     "url": "https://www.dennissevershouse.co.uk/calendar",
-     "when": "Wednesday–Sunday until 10 January, timeslots between 12:00 and 15:15",
-     "price": "£17.50 per person",
-     "age": "once they’re old enough not to knock anything over (see below)",
-     "category": "ongoing",
-     "list": "",
-     "featured": true,
-     "blurb": "A candlelit Spitalfields house dressed for Christmas, with relaxed daytime family visits."
-    }
-   ]
-  },
-  {
-   "name": "Barbican Centre",
-   "address": "Silk Street",
-   "postcode": "EC2Y 8DS",
-   "lat": 51.519961,
-   "lng": -0.094103,
-   "approx": false,
-   "events": [
-    {
-     "title": "Reverie Cineclub Presents: Hubley Hash + music with trumpeter Olivia Cuttill",
-     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-reverie-cineclub-presents-hubley-hash",
-     "when": "Saturday 21 November, 11:00",
-     "price": "Adults £5, under-18s £2.50",
-     "age": "7+",
-     "category": "weekend",
-     "list": "",
-     "featured": true,
-     "blurb": "Family film club screening rule-breaking Hubley cartoons with live trumpet."
-    }
-   ]
-  },
-  {
-   "name": "The Cockpit",
-   "address": "Gateforth Street",
-   "postcode": "NW8 8EH",
-   "lat": 51.524449,
-   "lng": -0.169267,
-   "approx": false,
-   "events": [
-    {
-     "title": "Family Shakespeare – Pyramus & Thisbe: Help Us Write A Play!",
-     "url": "https://www.thecockpit.org.uk/show/family_shakespeare_pyramus_thisbe_-_november",
-     "when": "Saturday 21 November, 14:00",
-     "price": "Pay what you can: £18, £15 or £13 per person; family deal for 4: buy 3 tickets and get the 4th free",
-     "age": "5+",
-     "category": "weekend",
-     "list": "",
-     "featured": true,
-     "blurb": "Kids help invent a new Pyramus and Thisbe as Bottom's troupe prepare for the wedding."
-    }
-   ]
-  },
-  {
-   "name": "Leica Gallery London",
-   "address": "14 Dover Street",
-   "postcode": "W1S 4LW",
-   "lat": 51.508362,
-   "lng": -0.141869,
-   "approx": false,
-   "events": [
-    {
-     "title": "David Bailey – Time After Time",
-     "url": "https://leica-camera.com/en-GB/event/gallery-london-david-bailey-time-after-time",
-     "when": "Monday–Saturday until 14 January, 10:00–18:00",
-     "price": "FREE",
+     "title": "Winter Palace at Hampton Court Palace",
+     "url": "https://www.hrp.org.uk/hampton-court-palace/whats-on/winter-palace/",
+     "when": "Daily until 3 January, 10:00–16:30",
+     "price": "Included in palace admission (adults £36, 5–15s £18, under-5s free)",
      "age": "",
      "category": "ongoing",
      "list": "",
      "featured": true,
-     "blurb": "Free exhibition of Bailey's street photographs of old London, all prints for sale."
-    }
-   ]
-  },
-  {
-   "name": "Jacksons Lane",
-   "address": "269a Archway Road",
-   "postcode": "N6 5AA",
-   "lat": 51.57711,
-   "lng": -0.146368,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Sleep Show",
-     "url": "",
-     "when": "Saturday 21 and Sunday 22 November, 11:00 and 14:00",
-     "price": "£12.50 per person",
-     "age": "3+",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "artsdepot",
-   "address": "5 Nether Street",
-   "postcode": "N12 0GA",
-   "lat": 51.612818,
-   "lng": -0.176705,
-   "approx": false,
-   "events": [
-    {
-     "title": "LIT/UP: Big Beat Playground – Flying High",
-     "url": "",
-     "when": "Sunday 22 November, 11:00–15:00 (last entry 14:30)",
-     "price": "£9.50 per person",
-     "age": "0–11",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
+     "blurb": "A self-guided Christmas Beast Ball with puppets and performers in Henry VIII's rooms."
     }
    ]
   },
   {
    "name": "Woolwich Works",
-   "address": "Fireworks Factory, 11 No. 1 Street, Royal Arsenal",
+   "address": "The Fireworks Factory, 11 No. 1 Street",
    "postcode": "SE18 6HD",
    "lat": 51.494451,
    "lng": 0.069095,
    "approx": false,
    "events": [
     {
-     "title": "National Children's Orchestras Winter Concert 2026",
-     "url": "",
-     "when": "Sunday 22 November, 15:00 (pre-concert Q&A 14:00–14:25)",
-     "price": "Adults £23, under-18s £9, under-5s free",
+     "title": "Santa's Grotto at Woolwich Works",
+     "url": "https://www.woolwich.works/santas-grotto",
+     "when": "Saturday 28 and Sunday 29 November, 10:00–17:45 (plus various other dates until 23 December)",
+     "price": "£13.50 per child (adults go free)",
+     "age": "see FAQs about bringing babies under 1",
+     "category": "weekend",
+     "list": "",
+     "featured": true,
+     "blurb": "An affordable 25-minute grotto with letters, puzzles and free photos."
+    },
+    {
+     "title": "Neon Sun: Roller Circus",
+     "url": "https://www.woolwich.works/events/neon-sun-roller-circus",
+     "when": "Sunday 29 November, 13:00 and 15:00",
+     "price": "£17.50 per person",
      "age": "Suitable for all",
      "category": "weekend",
      "list": "",
@@ -175,18 +60,144 @@
    ]
   },
   {
-   "name": "Lower Stable Street",
-   "address": "King's Cross",
-   "postcode": "N1C 4LW",
-   "lat": 51.53693171951219,
-   "lng": -0.12588356097560974,
-   "approx": true,
+   "name": "Shakespeare's Globe",
+   "address": "21 New Globe Walk",
+   "postcode": "SE1 9DT",
+   "lat": 51.508112,
+   "lng": -0.096572,
+   "approx": false,
    "events": [
     {
-     "title": "Shōtengai Pan-Asian Market",
-     "url": "",
-     "when": "Saturday 21 and Sunday 22 November, 11:00–18:00",
-     "price": "FREE – no booking required",
+     "title": "Pinocchio",
+     "url": "https://www.shakespearesglobe.com/whats-on/pinocchio",
+     "when": "Saturday 28 November–Sunday 3 January, various performance times (see website)",
+     "price": "Standing £5–£10, seated £29–£89 (half-price seated tickets for under-16s)",
+     "age": "5+ (under-3s not admitted)",
+     "category": "weekend",
+     "list": "",
+     "featured": true,
+     "blurb": "A musical, puppet-led take on the darker original Pinocchio story."
+    }
+   ]
+  },
+  {
+   "name": "Twist Museum",
+   "address": "248 Oxford Street",
+   "postcode": "W1C 1DH",
+   "lat": 51.515376,
+   "lng": -0.142996,
+   "approx": false,
+   "events": [
+    {
+     "title": "Christmas at Twist Museum (20% off with code DADS20)",
+     "url": "https://twistmuseum.com/christmas-at-twist/",
+     "when": "Daily from 10:00",
+     "price": "20% off tickets with code DADS20 until 31 December",
+     "age": "6+",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Southbank Centre",
+   "address": "Riverside Terrace, Belvedere Road",
+   "postcode": "SE1 8XX",
+   "lat": 51.505768,
+   "lng": -0.1168,
+   "approx": false,
+   "events": [
+    {
+     "title": "Winter Light at the Southbank Centre",
+     "url": "https://www.southbankcentre.co.uk/whats-on/winter-light",
+     "when": "Daily until 10 January, “you can see them whenever we’re open”",
+     "price": "FREE",
+     "age": "",
+     "category": "ongoing",
+     "list": "",
+     "featured": true,
+     "blurb": "Free illuminated artworks across the Southbank, ideal for an early evening outing."
+    }
+   ]
+  },
+  {
+   "name": "Immerse LDN",
+   "address": "ExCeL Waterfront",
+   "postcode": "E16 1XL",
+   "lat": 51.508134,
+   "lng": 0.028673,
+   "approx": false,
+   "events": [
+    {
+     "title": "House of Dreamers (10% off with code DILHOD)",
+     "url": "https://immerseldn.com/events/house-dreamers-london",
+     "when": "Daily from 10:00 (09:00 on Saturdays)",
+     "price": "10% off tickets with code DILHOD",
+     "age": "suitable for all",
+     "category": "ongoing",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Museum of the Home",
+   "address": "136 Kingsland Road",
+   "postcode": "E2 8EA",
+   "lat": 51.531557,
+   "lng": -0.076244,
+   "approx": false,
+   "events": [
+    {
+     "title": "Winter Market at Museum of the Home",
+     "url": "https://museumofthehome.org.uk/whats-on/winter-market",
+     "when": "Saturday 28 November, 11:00–16:00",
+     "price": "Pay what you can: £0, £2, £4 or £6 per person",
+     "age": "",
+     "category": "weekend",
+     "list": "",
+     "featured": true,
+     "blurb": "Over 50 independent makers selling quirky gifts at a Hackney museum."
+    }
+   ]
+  },
+  {
+   "name": "Barbican Cinema 2",
+   "address": "Beech Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Film Club: Chilly Pics Shorts Programme",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/family-film-club-chilly-pics-shorts-programme",
+     "when": "Saturday 28 November, 11:00",
+     "price": "Adults £5, under-18s £2.50, plus £1.50 transaction fee per booking (minimum booking of one adult and one child)",
+     "age": "4+ (U)",
+     "category": "weekend",
+     "list": "",
+     "featured": false,
+     "blurb": ""
+    }
+   ]
+  },
+  {
+   "name": "Wembley Park",
+   "address": "Canada Lane, off First Way",
+   "postcode": "HA9 0QA",
+   "lat": 51.557354,
+   "lng": -0.277454,
+   "approx": false,
+   "events": [
+    {
+     "title": "Wembley Park Antiques & Vintage Market",
+     "url": "https://wembleypark.com/whats-on/wembley-park-antiques-vintage-market/",
+     "when": "Sunday 29 November, 10:00–15:00",
+     "price": "£5 per person",
      "age": "",
      "category": "weekend",
      "list": "",
@@ -194,151 +205,13 @@
      "blurb": ""
     }
    ]
-  },
-  {
-   "name": "Half Moon Theatre",
-   "address": "43 White Horse Road",
-   "postcode": "E1 0ND",
-   "lat": 51.513692,
-   "lng": -0.04062,
-   "approx": false,
-   "events": [
-    {
-     "title": "A Tale of Us",
-     "url": "",
-     "when": "Saturday 21 November, 11:00, 13:00 and 15:00",
-     "price": "£9 per person",
-     "age": "0–18 months",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "Grand Junction, St Mary Magdalene's Church",
-   "address": "Rowington Close",
-   "postcode": "W2 5TF",
-   "lat": 51.522466,
-   "lng": -0.189254,
-   "approx": false,
-   "events": [
-    {
-     "title": "Loved & Wanted Autumn Festival",
-     "url": "",
-     "when": "Saturday 21 November, 13:30–16:30",
-     "price": "FREE – no booking required",
-     "age": "Suitable for all",
-     "category": "weekend",
-     "list": "",
-     "featured": false,
-     "blurb": ""
-    }
-   ]
-  },
-  {
-   "name": "The Garden Cinema",
-   "address": "39-41 Parker Street",
-   "postcode": "WC2B 5PQ",
-   "lat": 51.516228,
-   "lng": -0.12137,
-   "approx": false,
-   "events": [
-    {
-     "title": "Snow White and the Seven Dwarfs",
-     "url": "https://www.thegardencinema.co.uk/film/snow-white-and-the-seven-dwarfs/",
-     "when": "28–29 November 2026, 11:00",
-     "price": "Pay what you can",
-     "age": "5+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Disney's first feature-length classic on the big screen, with a free kids' activity on Sunday."
-    },
-    {
-     "title": "Pinocchio (2019) (Subbed)",
-     "url": "https://www.thegardencinema.co.uk/film/pinocchio-2019/",
-     "when": "5–6 December 2026, 11:00",
-     "price": "Pay what you can",
-     "age": "5+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Garrone's live-action Pinocchio in Italian with subtitles, plus a free Sunday kids' activity."
-    }
-   ]
-  },
-  {
-   "name": "Soho Theatre Walthamstow",
-   "address": "186 Hoe Street",
-   "postcode": "E17 4QH",
-   "lat": 51.586499,
-   "lng": -0.020398,
-   "approx": false,
-   "events": [
-    {
-     "title": "The Gruffalo",
-     "url": "https://sohotheatre.com/events/the-gruffalo/",
-     "when": "12–13 December 2026, 10:30 and 13:30",
-     "price": "£15–£30 per person",
-     "age": "3+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Tall Stories' musical Gruffalo returns for its 25th anniversary."
-    },
-    {
-     "title": "Musical Magic Box",
-     "url": "https://sohotheatre.com/events/musical-magic-box-3/",
-     "when": "19 December 2026, 10:30",
-     "price": "1 adult + 1 child £12",
-     "age": "18 months+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Interactive storytelling with live music and guitar for little ones."
-    },
-    {
-     "title": "The Nutcracker and the Mouse King",
-     "url": "https://sohotheatre.com/events/the-nutcracker-and-the-mouse-king/",
-     "when": "22 December 2026 to 3 January 2027, various start times (see website)",
-     "price": "£15–£32 per person",
-     "age": "5+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "Little Bulb's silly, cardboard-crafted reimagining of the Nutcracker tale."
-    }
-   ]
-  },
-  {
-   "name": "Park Theatre",
-   "address": "Clifton Terrace",
-   "postcode": "N4 3JP",
-   "lat": 51.565668,
-   "lng": -0.10841,
-   "approx": false,
-   "events": [
-    {
-     "title": "A Dickens of a Christmas",
-     "url": "https://parktheatre.co.uk/events/a-dickens-of-a-christmas/",
-     "when": "15 December 2026 to 9 January 2027, Tuesday–Sunday 19:00, Thursday and Sunday also 15:15",
-     "price": "£15–£25 per person (usually £25 on weekends)",
-     "age": "10+",
-     "category": "later",
-     "list": "golden",
-     "featured": false,
-     "blurb": "A madcap, carol-filled romp through Dickens' lesser-known Christmas stories."
-    }
-   ]
   }
  ],
  "counts": {
-  "weekend": 9,
-  "ongoing": 2,
+  "weekend": 6,
+  "ongoing": 4,
   "later": 0,
-  "golden": 6
+  "golden": 0
  },
  "golden_source": {
   "subject": "The Golden Ticket #91: Events to book right now",
