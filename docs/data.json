@@ -119,6 +119,61 @@
      "list": "",
      "featured": true,
      "blurb": "Free illuminated artworks across the Southbank, ideal for an early evening outing."
+    },
+    {
+     "title": "The Very Hungry Caterpillar",
+     "url": "https://www.southbankcentre.co.uk/whats-on/the-very-hungry-caterpillar-show/",
+     "when": "10 and 11 February 2027, 10:30, 13:30 and 15:30",
+     "price": "£11–£22 per person",
+     "age": "1–6",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Eric Carle's stories brought to life with over 75 puppets and original music."
+    },
+    {
+     "title": "Yoto Daily Live",
+     "url": "https://www.southbankcentre.co.uk/whats-on/yoto-daily-live/",
+     "when": "13 February 2027, 15:00",
+     "price": "£12.50–£26 per person",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Live version of the Yoto Daily podcast with games, stories and plenty of audience noise."
+    },
+    {
+     "title": "The Jungalist of Jungle",
+     "url": "https://www.southbankcentre.co.uk/whats-on/the-jungalist-of-jungle/",
+     "when": "13 February 2027, 10:30 and 13:30",
+     "price": "Free – no ticket required",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "A free jungle-themed dance party for little and big ravers."
+    },
+    {
+     "title": "A Morning with Draw with Rob",
+     "url": "https://www.southbankcentre.co.uk/whats-on/a-morning-with-draw-with-rob/",
+     "when": "13 February 2027, 10:30",
+     "price": "£14–£18 per person",
+     "age": "5+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Children's author Rob Biddulph talks about his books and his creative journey."
+    },
+    {
+     "title": "Shrek 2 in Concert",
+     "url": "https://www.southbankcentre.co.uk/whats-on/shrek-2-in-concert/",
+     "when": "15 February 2027, 14:45 and 18:30",
+     "price": "£22–£46 per person",
+     "age": "Rated PG",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Shrek 2 on the big screen with its score played live by an orchestra."
     }
    ]
   },
@@ -205,18 +260,81 @@
      "blurb": ""
     }
    ]
+  },
+  {
+   "name": "The Garden Cinema",
+   "address": "39-41 Parker Street",
+   "postcode": "WC2B 5PQ",
+   "lat": 51.516228,
+   "lng": -0.12137,
+   "approx": false,
+   "events": [
+    {
+     "title": "Miracle on 34th Street (1994)",
+     "url": "https://www.thegardencinema.co.uk/film/miracle-on-34th-street-1994/",
+     "when": "12 and 13 December 2026, 11:00",
+     "price": "Pay what you can: £0, £3, £6, £9 or £12 per person",
+     "age": "7+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Classic Christmas film about a girl and a department store Santa, shown on pay-what-you-can tickets."
+    }
+   ]
+  },
+  {
+   "name": "Barbican Centre",
+   "address": "Silk Street",
+   "postcode": "EC2Y 8DS",
+   "lat": 51.519961,
+   "lng": -0.094103,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Film Club: Ponyo [Dubbed]",
+     "url": "https://www.barbican.org.uk/whats-on/2027/event/family-film-club-ponyo",
+     "when": "16 January 2027, 11:00",
+     "price": "Adults £5, under-18s £2.50",
+     "age": "4+",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Miyazaki's tale of a boy and a goldfish princess, in an English-dubbed family screening."
+    }
+   ]
+  },
+  {
+   "name": "Palace of Westminster",
+   "address": "Parliament Square",
+   "postcode": "SW1A 0AA",
+   "lat": 51.499842,
+   "lng": -0.124638,
+   "approx": false,
+   "events": [
+    {
+     "title": "Family Day at the Palace of Westminster",
+     "url": "https://www.parliament.uk/visiting/visiting-and-tours/family-friendly-tours-and-experiences/family-day/",
+     "when": "13 February 2027, 09:30–18:00",
+     "price": "Adults £31, under-15s free",
+     "age": "Suitable for all",
+     "category": "later",
+     "list": "golden",
+     "featured": false,
+     "blurb": "Trails, crafts, costumed storytelling and a mock vote in the Commons Chamber."
+    }
+   ]
   }
  ],
  "counts": {
   "weekend": 6,
   "ongoing": 4,
   "later": 0,
-  "golden": 0
+  "golden": 8
  },
  "golden_source": {
-  "subject": "The Golden Ticket #91: Events to book right now",
-  "issued": "2026-11-18",
-  "label": "Golden Ticket #91",
-  "url": "https://www.dadsinlondon.com/p/golden-ticket-91"
+  "subject": "The Golden Ticket #92: Events to book right now",
+  "issued": "2026-11-25",
+  "label": "Golden Ticket #92",
+  "url": "https://www.dadsinlondon.com/p/golden-ticket-92"
  }
 }
